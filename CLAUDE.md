@@ -142,14 +142,25 @@ npx @claude-flow/cli@latest hooks worker dispatch --trigger audit
 
 Any string works as a custom agent type.
 
+## Codebase Documentation (`docs/`)
+
+Before starting any non-trivial task, read the relevant doc:
+
+| File | Read when you need to… |
+|------|------------------------|
+| [`docs/overview.md`](docs/overview.md) | Understand the project at a glance — structure, ROM layout, subsystem map |
+| [`docs/build.md`](docs/build.md) | Build the ROM, understand tool versions, debug build errors |
+| [`docs/codebase-map.md`](docs/codebase-map.md) | Find which file implements a given system (every dir + key files listed) |
+| [`docs/maps-and-events.md`](docs/maps-and-events.md) | Read/write map files, add NPCs/warps, write event scripts |
+| [`docs/data-formats.md`](docs/data-formats.md) | Work with Pokémon stats, trainer parties, moves, items, wild tables |
+| [`docs/memory-layout.md`](docs/memory-layout.md) | Read/write WRAM variables, understand the GBC address space |
+| [`docs/macros-and-constants.md`](docs/macros-and-constants.md) | Use the enum system, find constant values, understand `farcall`/`predef` |
+
 ## Build & Test
 
-- ALWAYS run tests after code changes
-- ALWAYS verify build succeeds before committing
-
-```bash
-npm run build && npm test
-```
+- ALWAYS verify the build succeeds after code changes: `make nodebug RGBDS="/tmp/rgbds-0.7.0/"`
+- There is no test suite — correctness is verified by building and running the ROM in an emulator
+- RGBDS **0.7.0** is required (see `docs/build.md`)
 
 ## CLI Quick Reference
 
