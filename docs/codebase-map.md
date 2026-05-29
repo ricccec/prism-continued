@@ -344,3 +344,24 @@ Every ID used in the codebase is defined here as an `EQU` constant.
 | `sram.link` | SRAM section layout |
 | `gbs.link` | GBS-format section layout |
 | `bank_ends.txt` | Generated: free bytes per bank (from `make freespace`) |
+
+---
+
+## `tools/` — Python Devtools
+
+Off-ROM helpers for working on the codebase. Authoritative reference is
+[`../tools/README.md`](../tools/README.md); user-facing usage is in
+[`devtools.md`](devtools.md).
+
+| Path | What it does |
+|------|-------------|
+| `_lib/` | Shared stdlib-only parsers (sym, constants, maps, savefile, LZ, blockdata, people) |
+| `sym-lookup/` | Query the RGBDS `.sym` by label or address |
+| `start-state/start-state.py` | CLI entrypoint — patch `.sav`, launch SameBoy |
+| `start-state/tui.py` | `questionary` dev-server: edit state, watch `.sym`, manage SameBoy |
+| `start-state/inventory.py` | Build/refresh `inventory.json` from the `.sym` |
+| `start-state/apply.py` | Mutate a `.sav` from a `state.json` (player + map fields) |
+| `start-state/launcher.py` | Locate SameBoy via `$SAMEBOY_BIN` / `$PATH` / Spotlight; launch + focus |
+| `start-state/test_maps.py` | Sweep every map through `apply_state` (regression check) |
+| `test_lib.py` | Smoke test for `_lib/` parsers against the real `.sym` + constants |
+| `requirements.txt` | Pinned external deps (`questionary` for the TUI) |
