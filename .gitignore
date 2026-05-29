@@ -77,3 +77,6 @@ $RECYCLE.BIN/
 *.bak
 *.db
 *.lnk
+
+# Python virtual env
+**/.venv
