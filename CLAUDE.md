@@ -155,6 +155,8 @@ Before starting any non-trivial task, read the relevant doc:
 | [`docs/data-formats.md`](docs/data-formats.md) | Work with Pokémon stats, trainer parties, moves, items, wild tables |
 | [`docs/memory-layout.md`](docs/memory-layout.md) | Read/write WRAM variables, understand the GBC address space |
 | [`docs/macros-and-constants.md`](docs/macros-and-constants.md) | Use the enum system, find constant values, understand `farcall`/`predef` |
+| [`docs/debug-mode.md`](docs/debug-mode.md) | Use the in-game debug menus, the `DEBUG_MODE` build flag, or the `/patch/` bspcomp framework |
+| [`docs/devtools-plan.md`](docs/devtools-plan.md) | Working plan/spec for the Python devtools under `/tools/` (start-state, sym-lookup, …) |
 
 ## Build & Test
 
