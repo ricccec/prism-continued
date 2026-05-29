@@ -19,6 +19,12 @@ gfx/pics/*/shiny.pal
 # precompiled Python
 *.pyc
 *$py.class
+__pycache__/
+
+# devtools — generated artifacts
+tools/start-state/inventory.json
+tools/start-state/state.json
+tools/start-state/sav-backups/
 
 # binaries
 *.exe
