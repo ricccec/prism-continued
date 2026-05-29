@@ -158,6 +158,7 @@ Before starting any non-trivial task, read the relevant doc:
 | [`docs/debug-mode.md`](docs/debug-mode.md) | Use the in-game debug menus, the `DEBUG_MODE` build flag, or the `/patch/` bspcomp framework |
 | [`docs/devtools.md`](docs/devtools.md) | Use the Python devtools under `/tools/` — sym-lookup, start-state, etc. (living doc) |
 | [`docs/devtools-plan.md`](docs/devtools-plan.md) | Working plan/spec for the Python devtools under `/tools/` (start-state, sym-lookup, …) |
+| [`docs/blockdata-plan.md`](docs/blockdata-plan.md) | Sub-plan: how start-state reads map blockdata from ROM and computes wScreenSave on map change (shipped; kept as design record) |
 
 ## Build & Test
 
