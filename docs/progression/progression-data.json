@@ -1,0 +1,4510 @@
+{
+  "sections": [
+    {
+      "id": "s1",
+      "name": "Early Naljo",
+      "parent_id": null,
+      "branch_label": null,
+      "locations": [
+        {
+          "name": "Acqua Mines",
+          "order": 1,
+          "trainers": [],
+          "wild": {
+            "min_level": 2,
+            "max_level": 35,
+            "species": [
+              "ABRA",
+              "CHINCHOU",
+              "FEEBAS",
+              "GOLDEEN",
+              "MAKUHITA",
+              "SENTRET",
+              "SHINX",
+              "VENONAT",
+              "ZUBAT"
+            ]
+          }
+        },
+        {
+          "name": "Caper Ridge",
+          "order": 2,
+          "trainers": [],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Route 70",
+          "order": 3,
+          "trainers": [
+            {
+              "class_name": "Bug Catcher Gary",
+              "pokemon": [
+                {
+                  "species": "Volbeat",
+                  "level": 3
+                },
+                {
+                  "species": "Illumise",
+                  "level": 3
+                }
+              ],
+              "battle_idx": 1
+            },
+            {
+              "class_name": "Hiker Jerry",
+              "pokemon": [
+                {
+                  "species": "Sentret",
+                  "level": 5
+                }
+              ],
+              "battle_idx": 2
+            }
+          ],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Route 71 West",
+          "order": 4,
+          "trainers": [],
+          "wild": {
+            "min_level": 3,
+            "max_level": 6,
+            "species": [
+              "METAPOD",
+              "PIDGEY",
+              "RALTS",
+              "SNORUNT",
+              "SPEAROW",
+              "TAILLOW"
+            ]
+          }
+        },
+        {
+          "name": "Route 72",
+          "order": 5,
+          "trainers": [
+            {
+              "class_name": "Youngster Jordan",
+              "pokemon": [
+                {
+                  "species": "Taillow",
+                  "level": 4
+                },
+                {
+                  "species": "Pidgey",
+                  "level": 4
+                }
+              ],
+              "battle_idx": 3
+            },
+            {
+              "class_name": "Picnicker Lois",
+              "pokemon": [
+                {
+                  "species": "Numel",
+                  "level": 4
+                },
+                {
+                  "species": "Vulpix",
+                  "level": 5
+                }
+              ],
+              "battle_idx": 4
+            },
+            {
+              "class_name": "Pokefan Derek",
+              "pokemon": [
+                {
+                  "species": "Pikachu",
+                  "level": 5
+                }
+              ],
+              "battle_idx": 5
+            },
+            {
+              "class_name": "Youngster Wilson",
+              "pokemon": [
+                {
+                  "species": "Marill",
+                  "level": 5
+                },
+                {
+                  "species": "Pidgey",
+                  "level": 7
+                }
+              ],
+              "battle_idx": 6
+            },
+            {
+              "class_name": "Pokemaniac Denji",
+              "pokemon": [
+                {
+                  "species": "Mareep",
+                  "level": 7
+                }
+              ],
+              "battle_idx": 7
+            },
+            {
+              "class_name": "Pokemaniac Paul",
+              "pokemon": [
+                {
+                  "species": "Ralts",
+                  "level": 7
+                }
+              ],
+              "battle_idx": 8
+            },
+            {
+              "class_name": "Super Nerd Bill",
+              "pokemon": [
+                {
+                  "species": "Yanma",
+                  "level": 7
+                },
+                {
+                  "species": "Trapinch",
+                  "level": 8
+                }
+              ],
+              "battle_idx": 9
+            },
+            {
+              "class_name": "Super Nerd Hugh",
+              "pokemon": [
+                {
+                  "species": "Koffing",
+                  "level": 8
+                },
+                {
+                  "species": "Snorunt",
+                  "level": 9
+                }
+              ],
+              "battle_idx": 10
+            },
+            {
+              "class_name": "Blackbelt Ryu",
+              "pokemon": [
+                {
+                  "species": "Makuhita",
+                  "level": 9
+                },
+                {
+                  "species": "Machop",
+                  "level": 9
+                }
+              ],
+              "battle_idx": 11
+            },
+            {
+              "class_name": "Delinquent Skyler",
+              "pokemon": [
+                {
+                  "species": "Houndour",
+                  "level": 8
+                },
+                {
+                  "species": "Houndour",
+                  "level": 9
+                }
+              ],
+              "battle_idx": 12
+            },
+            {
+              "class_name": "Cooltrainer Tayne",
+              "pokemon": [
+                {
+                  "species": "Charmander",
+                  "level": 9
+                },
+                {
+                  "species": "Ponyta",
+                  "level": 10
+                }
+              ],
+              "battle_idx": 13
+            }
+          ],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "GOLDEEN",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Oxalis City",
+          "order": 6,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 73",
+          "order": 7,
+          "trainers": [
+            {
+              "class_name": "Picnicker Kat",
+              "pokemon": [
+                {
+                  "species": "Bellsprout",
+                  "level": 9
+                }
+              ],
+              "battle_idx": 14
+            },
+            {
+              "class_name": "Bird Keeper Tyrone",
+              "pokemon": [
+                {
+                  "species": "Pidgey",
+                  "level": 9
+                },
+                {
+                  "species": "Taillow",
+                  "level": 10
+                }
+              ],
+              "battle_idx": 15
+            },
+            {
+              "class_name": "Bug Catcher Max",
+              "pokemon": [
+                {
+                  "species": "Pineco",
+                  "level": 10
+                }
+              ],
+              "battle_idx": 16
+            },
+            {
+              "class_name": "Juggler James",
+              "pokemon": [
+                {
+                  "species": "Pineco",
+                  "level": 10
+                },
+                {
+                  "species": "Bronzor",
+                  "level": 11
+                },
+                {
+                  "species": "Koffing",
+                  "level": 10
+                }
+              ],
+              "battle_idx": 17
+            }
+          ],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "GOLDEEN",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Mound Cave",
+          "order": 8,
+          "trainers": [],
+          "wild": {
+            "min_level": 7,
+            "max_level": 10,
+            "species": [
+              "BRONZOR",
+              "EEVEE",
+              "GEODUDE",
+              "GLIGAR",
+              "GOLDEEN",
+              "KOFFING",
+              "MAGIKARP",
+              "PARAS",
+              "SHINX",
+              "SNEASEL",
+              "VULPIX",
+              "ZUBAT"
+            ]
+          }
+        },
+        {
+          "name": "Spurge City",
+          "order": 9,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 74",
+          "order": 10,
+          "trainers": [
+            {
+              "class_name": "Sailor Lionel",
+              "pokemon": [
+                {
+                  "species": "Tentacool",
+                  "level": 13
+                },
+                {
+                  "species": "Wailmer",
+                  "level": 13
+                },
+                {
+                  "species": "Lotad",
+                  "level": 14
+                }
+              ],
+              "battle_idx": 18
+            },
+            {
+              "class_name": "Psychic Teller",
+              "pokemon": [
+                {
+                  "species": "Abra",
+                  "level": 14
+                },
+                {
+                  "species": "Kadabra",
+                  "level": 15
+                }
+              ],
+              "battle_idx": 19
+            },
+            {
+              "class_name": "Pokefan Jessica",
+              "pokemon": [
+                {
+                  "species": "Jigglypuff",
+                  "level": 17
+                }
+              ],
+              "battle_idx": 20
+            },
+            {
+              "class_name": "Pokefan Spencer",
+              "pokemon": [
+                {
+                  "species": "Pikachu",
+                  "level": 16
+                }
+              ],
+              "battle_idx": 21
+            }
+          ],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "GOLDEEN",
+              "LOTAD"
+            ]
+          }
+        },
+        {
+          "name": "Heath Village",
+          "order": 11,
+          "trainers": [],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "GOLDEEN",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Route 69",
+          "order": 12,
+          "trainers": [
+            {
+              "class_name": "Cooltrainer Carla",
+              "pokemon": [
+                {
+                  "species": "Marill",
+                  "level": 14
+                },
+                {
+                  "species": "Chinchou",
+                  "level": 15
+                },
+                {
+                  "species": "Marill",
+                  "level": 15
+                }
+              ],
+              "battle_idx": 22
+            },
+            {
+              "class_name": "Hiker Harry",
+              "pokemon": [
+                {
+                  "species": "Geodude",
+                  "level": 15
+                },
+                {
+                  "species": "Onix",
+                  "level": 16
+                },
+                {
+                  "species": "Machop",
+                  "level": 15
+                }
+              ],
+              "battle_idx": 23
+            },
+            {
+              "class_name": "Hiker Larry",
+              "pokemon": [
+                {
+                  "species": "Geodude",
+                  "level": 15
+                },
+                {
+                  "species": "Gligar",
+                  "level": 16
+                },
+                {
+                  "species": "Onix",
+                  "level": 16
+                }
+              ],
+              "battle_idx": 24
+            },
+            {
+              "class_name": "Hiker Neil",
+              "pokemon": [
+                {
+                  "species": "Geodude",
+                  "level": 18
+                },
+                {
+                  "species": "Aron",
+                  "level": 19
+                }
+              ],
+              "battle_idx": 25
+            }
+          ],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "SPEAROW",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Rinji's Forest",
+          "order": 13,
+          "trainers": [
+            {
+              "class_name": "Twins Emy&Mary",
+              "pokemon": [
+                {
+                  "species": "Bellsprout",
+                  "level": 14
+                },
+                {
+                  "species": "Butterfree",
+                  "level": 15
+                }
+              ],
+              "battle_idx": 26
+            },
+            {
+              "class_name": "Beauty Veronica",
+              "pokemon": [
+                {
+                  "species": "Cacnea",
+                  "level": 15
+                },
+                {
+                  "species": "Shroomish",
+                  "level": 16
+                }
+              ],
+              "battle_idx": 27
+            },
+            {
+              "class_name": "Youngster Rocky",
+              "pokemon": [
+                {
+                  "species": "Chikorita",
+                  "level": 16
+                },
+                {
+                  "species": "Bellsprout",
+                  "level": 16
+                }
+              ],
+              "battle_idx": 28
+            },
+            {
+              "class_name": "Schoolboy Doug",
+              "pokemon": [
+                {
+                  "species": "Paras",
+                  "level": 16
+                },
+                {
+                  "species": "Bulbasaur",
+                  "level": 17
+                },
+                {
+                  "species": "Paras",
+                  "level": 18
+                }
+              ],
+              "battle_idx": 29
+            },
+            {
+              "class_name": "Blackbelt Akira",
+              "pokemon": [
+                {
+                  "species": "Machoke",
+                  "level": 18
+                }
+              ],
+              "battle_idx": 30
+            },
+            {
+              "class_name": "Cooltrainer Peter",
+              "pokemon": [
+                {
+                  "species": "Kadabra",
+                  "level": 18
+                }
+              ],
+              "battle_idx": 31
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Route 75",
+          "order": 14,
+          "trainers": [
+            {
+              "class_name": "Schoolboy Travis",
+              "pokemon": [
+                {
+                  "species": "Swellow",
+                  "level": 16
+                }
+              ],
+              "battle_idx": 32
+            },
+            {
+              "class_name": "Beauty Michelle",
+              "pokemon": [
+                {
+                  "species": "Volbeat",
+                  "level": 17
+                },
+                {
+                  "species": "Wigglytuff",
+                  "level": 17
+                }
+              ],
+              "battle_idx": 33
+            },
+            {
+              "class_name": "Sailor Dave",
+              "pokemon": [
+                {
+                  "species": "Surskit",
+                  "level": 18
+                }
+              ],
+              "battle_idx": 34
+            },
+            {
+              "class_name": "Sailor Dave",
+              "pokemon": [
+                {
+                  "species": "Surskit",
+                  "level": 18
+                }
+              ],
+              "battle_idx": 35
+            },
+            {
+              "class_name": "Bird Keeper Carter",
+              "pokemon": [
+                {
+                  "species": "Pidgey",
+                  "level": 16
+                },
+                {
+                  "species": "Pidgey",
+                  "level": 17
+                }
+              ],
+              "battle_idx": 36
+            },
+            {
+              "class_name": "Lass Daphne",
+              "pokemon": [
+                {
+                  "species": "Mareep",
+                  "level": 18
+                },
+                {
+                  "species": "Flaaffy",
+                  "level": 19
+                }
+              ],
+              "battle_idx": 37
+            },
+            {
+              "class_name": "Cheerleader Khloe",
+              "pokemon": [
+                {
+                  "species": "Marill",
+                  "level": 18
+                },
+                {
+                  "species": "Mawile",
+                  "level": 19
+                }
+              ],
+              "battle_idx": 38
+            },
+            {
+              "class_name": "Cheerleader Nicole",
+              "pokemon": [
+                {
+                  "species": "Jigglypuff",
+                  "level": 19
+                },
+                {
+                  "species": "Ralts",
+                  "level": 19
+                }
+              ],
+              "battle_idx": 39
+            }
+          ],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Laurel City",
+          "order": 15,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 76",
+          "order": 16,
+          "trainers": [
+            {
+              "class_name": "Psychic Penn",
+              "pokemon": [
+                {
+                  "species": "Lunatone",
+                  "level": 19
+                }
+              ],
+              "battle_idx": 40
+            },
+            {
+              "class_name": "Twins Liz&Lily",
+              "pokemon": [
+                {
+                  "species": "Volbeat",
+                  "level": 19
+                },
+                {
+                  "species": "Illumise",
+                  "level": 19
+                }
+              ],
+              "battle_idx": 41
+            }
+          ],
+          "wild": {
+            "min_level": 15,
+            "max_level": 17,
+            "species": [
+              "LUXIO",
+              "PARAS",
+              "PIKACHU",
+              "SPEAROW",
+              "TEDDIURSA"
+            ]
+          }
+        },
+        {
+          "name": "Laurel Forest",
+          "order": 17,
+          "trainers": [
+            {
+              "class_name": "Scientist No. 13",
+              "pokemon": [
+                {
+                  "species": "Kadabra",
+                  "level": 16
+                },
+                {
+                  "species": "Koffing",
+                  "level": 17
+                }
+              ],
+              "battle_idx": 42
+            },
+            {
+              "class_name": "Scientist No. 07",
+              "pokemon": [
+                {
+                  "species": "Ditto",
+                  "level": 20
+                }
+              ],
+              "battle_idx": 43
+            }
+          ],
+          "wild": {
+            "min_level": 10,
+            "max_level": 12,
+            "species": [
+              "CHINCHOU",
+              "FEEBAS",
+              "GOLDEEN"
+            ]
+          }
+        },
+        {
+          "name": "Magikarp Caverns",
+          "order": 18,
+          "trainers": [
+            {
+              "class_name": "Bug Catcher Lenny",
+              "pokemon": [
+                {
+                  "species": "Butterfree",
+                  "level": 23
+                },
+                {
+                  "species": "Yanma",
+                  "level": 25
+                }
+              ],
+              "battle_idx": 44
+            },
+            {
+              "class_name": "Bug Catcher Carl",
+              "pokemon": [
+                {
+                  "species": "Surskit",
+                  "level": 24
+                },
+                {
+                  "species": "Masquerain",
+                  "level": 25
+                }
+              ],
+              "battle_idx": 45
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Torenia City",
+          "order": 19,
+          "trainers": [],
+          "wild": null
+        }
+      ]
+    },
+    {
+      "id": "s1a",
+      "name": "Torenia \u2192 Route 83",
+      "parent_id": "s1",
+      "branch_label": "Route 83 side trip",
+      "locations": [
+        {
+          "name": "Route 83",
+          "order": 20,
+          "trainers": [
+            {
+              "class_name": "Schoolboy Jason",
+              "pokemon": [
+                {
+                  "species": "Tangela",
+                  "level": 26
+                }
+              ],
+              "battle_idx": 46
+            },
+            {
+              "class_name": "Camper Herb",
+              "pokemon": [
+                {
+                  "species": "Lunatone",
+                  "level": 25
+                },
+                {
+                  "species": "Solrock",
+                  "level": 25
+                }
+              ],
+              "battle_idx": 47
+            },
+            {
+              "class_name": "Fisher Vince",
+              "pokemon": [
+                {
+                  "species": "Magikarp",
+                  "level": 37
+                },
+                {
+                  "species": "Feebas",
+                  "level": 37
+                }
+              ],
+              "battle_idx": 48
+            },
+            {
+              "class_name": "Fisher Albert",
+              "pokemon": [
+                {
+                  "species": "Milotic",
+                  "level": 27
+                }
+              ],
+              "battle_idx": 49
+            }
+          ],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "GOLDEEN",
+              "TENTACOOL"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s1b",
+      "name": "Torenia \u2192 Botan City",
+      "parent_id": "s1",
+      "branch_label": "Botan City detour",
+      "locations": [
+        {
+          "name": "Route 77 North",
+          "order": 21,
+          "trainers": [],
+          "wild": {
+            "min_level": 13,
+            "max_level": 16,
+            "species": [
+              "GOLDEEN",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Haunted Forest",
+          "order": 22,
+          "trainers": [
+            {
+              "class_name": "Sage Genjo",
+              "pokemon": [
+                {
+                  "species": "Gastly",
+                  "level": 21
+                },
+                {
+                  "species": "Shuppet",
+                  "level": 21
+                },
+                {
+                  "species": "Haunter",
+                  "level": 22
+                }
+              ],
+              "battle_idx": 50
+            },
+            {
+              "class_name": "Medium Chieko",
+              "pokemon": [
+                {
+                  "species": "Duskull",
+                  "level": 22
+                },
+                {
+                  "species": "Duskull",
+                  "level": 23
+                },
+                {
+                  "species": "Shuppet",
+                  "level": 23
+                }
+              ],
+              "battle_idx": 51
+            },
+            {
+              "class_name": "Sage Minoru",
+              "pokemon": [
+                {
+                  "species": "Duskull",
+                  "level": 22
+                },
+                {
+                  "species": "Haunter",
+                  "level": 23
+                },
+                {
+                  "species": "Shuppet",
+                  "level": 22
+                }
+              ],
+              "battle_idx": 52
+            }
+          ],
+          "wild": {
+            "min_level": 18,
+            "max_level": 23,
+            "species": [
+              "GASTLY",
+              "GOLBAT",
+              "HAUNTER",
+              "MISDREAVUS",
+              "SHUPPET",
+              "ZUBAT"
+            ]
+          }
+        },
+        {
+          "name": "Haunted Mansion",
+          "order": 23,
+          "trainers": [
+            {
+              "class_name": "Medium Chika",
+              "pokemon": [
+                {
+                  "species": "Duskull",
+                  "level": 24
+                },
+                {
+                  "species": "Haunter",
+                  "level": 25
+                }
+              ],
+              "battle_idx": 53
+            },
+            {
+              "class_name": "Sage Daikoku",
+              "pokemon": [
+                {
+                  "species": "Sableye",
+                  "level": 26
+                }
+              ],
+              "battle_idx": 54
+            },
+            {
+              "class_name": "Medium Izunami",
+              "pokemon": [
+                {
+                  "species": "Spiritomb",
+                  "level": 25
+                }
+              ],
+              "battle_idx": 55
+            },
+            {
+              "class_name": "Fisher Bud",
+              "pokemon": [
+                {
+                  "species": "Goldeen",
+                  "level": 27
+                },
+                {
+                  "species": "Seaking",
+                  "level": 28
+                }
+              ],
+              "battle_idx": 56
+            },
+            {
+              "class_name": "Picnicker Estele",
+              "pokemon": [
+                {
+                  "species": "Weepinbell",
+                  "level": 27
+                },
+                {
+                  "species": "Manectric",
+                  "level": 28
+                }
+              ],
+              "battle_idx": 57
+            },
+            {
+              "class_name": "Youngster Willie",
+              "pokemon": [
+                {
+                  "species": "Aron",
+                  "level": 28
+                },
+                {
+                  "species": "Lairon",
+                  "level": 29
+                }
+              ],
+              "battle_idx": 58
+            }
+          ],
+          "wild": {
+            "min_level": 19,
+            "max_level": 57,
+            "species": [
+              "BANETTE",
+              "DUSCLOPS",
+              "GASTLY",
+              "HAUNTER",
+              "MISDREAVUS",
+              "SABLEYE",
+              "SHUPPET",
+              "SPIRITOMB"
+            ]
+          }
+        },
+        {
+          "name": "Botan City",
+          "order": 24,
+          "trainers": [],
+          "wild": null
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "name": "Mid/Late Naljo",
+      "parent_id": null,
+      "branch_label": null,
+      "locations": [
+        {
+          "name": "Route 77 South",
+          "order": 25,
+          "trainers": [],
+          "wild": {
+            "min_level": 30,
+            "max_level": 30,
+            "species": [
+              "SURSKIT",
+              "TENTACOOL",
+              "WAILMER"
+            ]
+          }
+        },
+        {
+          "name": "Milos Catacombs",
+          "order": 26,
+          "trainers": [
+            {
+              "class_name": "Officer Remy",
+              "pokemon": [
+                {
+                  "species": "Graveler",
+                  "level": 30
+                },
+                {
+                  "species": "Lairon",
+                  "level": 30
+                }
+              ],
+              "battle_idx": 59
+            }
+          ],
+          "wild": {
+            "min_level": 10,
+            "max_level": 23,
+            "species": [
+              "ARON",
+              "FEEBAS",
+              "GEODUDE",
+              "GLIGAR",
+              "GOLBAT",
+              "GOLDEEN",
+              "GROWLITHE",
+              "KIRLIA",
+              "ZUBAT"
+            ]
+          }
+        },
+        {
+          "name": "Phacelia Town",
+          "order": 27,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 85",
+          "order": 28,
+          "trainers": [
+            {
+              "class_name": "Bird Keeper Jerald",
+              "pokemon": [
+                {
+                  "species": "Pidgeotto",
+                  "level": 29
+                },
+                {
+                  "species": "Vibrava",
+                  "level": 31
+                }
+              ],
+              "battle_idx": 60
+            },
+            {
+              "class_name": "Psychic Murray",
+              "pokemon": [
+                {
+                  "species": "Exeggcute",
+                  "level": 30
+                },
+                {
+                  "species": "Exeggutor",
+                  "level": 31
+                }
+              ],
+              "battle_idx": 61
+            },
+            {
+              "class_name": "Blackbelt Dunn",
+              "pokemon": [
+                {
+                  "species": "Machoke",
+                  "level": 30
+                },
+                {
+                  "species": "Hitmonchan",
+                  "level": 32
+                }
+              ],
+              "battle_idx": 62
+            },
+            {
+              "class_name": "Blackbelt Everett",
+              "pokemon": [
+                {
+                  "species": "Hariyama",
+                  "level": 30
+                },
+                {
+                  "species": "Machoke",
+                  "level": 31
+                }
+              ],
+              "battle_idx": 63
+            },
+            {
+              "class_name": "Blackbelt Lennox",
+              "pokemon": [
+                {
+                  "species": "Hariyama",
+                  "level": 31
+                },
+                {
+                  "species": "Hitmontop",
+                  "level": 32
+                }
+              ],
+              "battle_idx": 64
+            }
+          ],
+          "wild": {
+            "min_level": 20,
+            "max_level": 20,
+            "species": [
+              "GOLDEEN",
+              "RELICANTH"
+            ]
+          }
+        },
+        {
+          "name": "Firelight Caverns",
+          "order": 29,
+          "trainers": [
+            {
+              "class_name": "Delinquent Bryce",
+              "pokemon": [
+                {
+                  "species": "Houndour",
+                  "level": 31
+                },
+                {
+                  "species": "Haunter",
+                  "level": 31
+                }
+              ],
+              "battle_idx": 65
+            },
+            {
+              "class_name": "Delinquent Beatrix",
+              "pokemon": [
+                {
+                  "species": "Koffing",
+                  "level": 31
+                },
+                {
+                  "species": "Drifblim",
+                  "level": 32
+                }
+              ],
+              "battle_idx": 66
+            },
+            {
+              "class_name": "Firebreather Frank",
+              "pokemon": [
+                {
+                  "species": "Magmar",
+                  "level": 32
+                },
+                {
+                  "species": "Magmar",
+                  "level": 33
+                }
+              ],
+              "battle_idx": 67
+            },
+            {
+              "class_name": "Cooltrainer Butch",
+              "pokemon": [
+                {
+                  "species": "Vulpix",
+                  "level": 32
+                },
+                {
+                  "species": "Lairon",
+                  "level": 33
+                },
+                {
+                  "species": "Arcanine",
+                  "level": 34
+                }
+              ],
+              "battle_idx": 68
+            },
+            {
+              "class_name": "Cooltrainer Maud",
+              "pokemon": [
+                {
+                  "species": "Lairon",
+                  "level": 33
+                },
+                {
+                  "species": "Ponyta",
+                  "level": 33
+                }
+              ],
+              "battle_idx": 69
+            },
+            {
+              "class_name": "Firebreather Earl",
+              "pokemon": [
+                {
+                  "species": "Houndour",
+                  "level": 33
+                },
+                {
+                  "species": "Vulpix",
+                  "level": 34
+                }
+              ],
+              "battle_idx": 70
+            }
+          ],
+          "wild": {
+            "min_level": 26,
+            "max_level": 32,
+            "species": [
+              "GRAVELER",
+              "GROWLITHE",
+              "KOFFING",
+              "MACHOKE",
+              "MACHOP",
+              "NUMEL",
+              "ONIX",
+              "PONYTA",
+              "SLUGMA",
+              "TORKOAL"
+            ]
+          }
+        },
+        {
+          "name": "Provincial Park",
+          "order": 30,
+          "trainers": [],
+          "wild": {
+            "min_level": 25,
+            "max_level": 30,
+            "species": [
+              "MASQUERAIN",
+              "SURSKIT",
+              "YANMA"
+            ]
+          }
+        },
+        {
+          "name": "Route 81",
+          "order": 31,
+          "trainers": [
+            {
+              "class_name": "Super Nerd Hector",
+              "pokemon": [
+                {
+                  "species": "Kadabra",
+                  "level": 36
+                },
+                {
+                  "species": "Kirlia",
+                  "level": 37
+                }
+              ],
+              "battle_idx": 71
+            },
+            {
+              "class_name": "Picnicker Nancy",
+              "pokemon": [
+                {
+                  "species": "Weepinbell",
+                  "level": 33
+                },
+                {
+                  "species": "Manectric",
+                  "level": 33
+                }
+              ],
+              "battle_idx": 72
+            },
+            {
+              "class_name": "Picnicker Rose",
+              "pokemon": [
+                {
+                  "species": "Ivysaur",
+                  "level": 34
+                },
+                {
+                  "species": "Weepinbell",
+                  "level": 35
+                }
+              ],
+              "battle_idx": 73
+            },
+            {
+              "class_name": "Blackbelt Bruce",
+              "pokemon": [
+                {
+                  "species": "Machoke",
+                  "level": 34
+                },
+                {
+                  "species": "Machoke",
+                  "level": 35
+                }
+              ],
+              "battle_idx": 74
+            },
+            {
+              "class_name": "Bird Keeper Corbin",
+              "pokemon": [
+                {
+                  "species": "Yanma",
+                  "level": 34
+                },
+                {
+                  "species": "Pidgeotto",
+                  "level": 35
+                }
+              ],
+              "battle_idx": 75
+            },
+            {
+              "class_name": "Delinquent Joanie",
+              "pokemon": [
+                {
+                  "species": "Venomoth",
+                  "level": 35
+                },
+                {
+                  "species": "Koffing",
+                  "level": 35
+                }
+              ],
+              "battle_idx": 76
+            },
+            {
+              "class_name": "Beauty Camry",
+              "pokemon": [
+                {
+                  "species": "Torkoal",
+                  "level": 36
+                },
+                {
+                  "species": "Torkoal",
+                  "level": 37
+                },
+                {
+                  "species": "Ariados",
+                  "level": 38
+                }
+              ],
+              "battle_idx": 77
+            }
+          ],
+          "wild": {
+            "min_level": 30,
+            "max_level": 30,
+            "species": [
+              "CHINCHOU",
+              "FEEBAS",
+              "SEAKING"
+            ]
+          }
+        },
+        {
+          "name": "Acania Docks",
+          "order": 32,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 68",
+          "order": 33,
+          "trainers": [
+            {
+              "class_name": "Officer Cole",
+              "pokemon": [
+                {
+                  "species": "Cacturne",
+                  "level": 37
+                },
+                {
+                  "species": "Furret",
+                  "level": 38
+                },
+                {
+                  "species": "Dusclops",
+                  "level": 40
+                }
+              ],
+              "battle_idx": 78
+            }
+          ],
+          "wild": {
+            "min_level": 20,
+            "max_level": 23,
+            "species": [
+              "RELICANTH",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Route 82",
+          "order": 34,
+          "trainers": [
+            {
+              "class_name": "Fisher Owen",
+              "pokemon": [
+                {
+                  "species": "Tentacruel",
+                  "level": 35
+                },
+                {
+                  "species": "Seaking",
+                  "level": 35
+                },
+                {
+                  "species": "Ludicolo",
+                  "level": 36
+                }
+              ],
+              "battle_idx": 79
+            },
+            {
+              "class_name": "Cooltrainer Jenny",
+              "pokemon": [
+                {
+                  "species": "Lairon",
+                  "level": 37
+                },
+                {
+                  "species": "Magcargo",
+                  "level": 38
+                },
+                {
+                  "species": "Absol",
+                  "level": 38
+                }
+              ],
+              "battle_idx": 80
+            },
+            {
+              "class_name": "Fisher Ishmael",
+              "pokemon": [
+                {
+                  "species": "Goldeen",
+                  "level": 39
+                },
+                {
+                  "species": "Wailmer",
+                  "level": 39
+                },
+                {
+                  "species": "Seaking",
+                  "level": 40
+                }
+              ],
+              "battle_idx": 81
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Route 80",
+          "order": 35,
+          "trainers": [
+            {
+              "class_name": "Fisher Kaleb",
+              "pokemon": [
+                {
+                  "species": "Tentacruel",
+                  "level": 41
+                },
+                {
+                  "species": "Wailmer",
+                  "level": 42
+                },
+                {
+                  "species": "Seaking",
+                  "level": 43
+                }
+              ],
+              "battle_idx": 82
+            },
+            {
+              "class_name": "Fisher Denzel",
+              "pokemon": [
+                {
+                  "species": "Seaking",
+                  "level": 41
+                },
+                {
+                  "species": "Azumarill",
+                  "level": 42
+                },
+                {
+                  "species": "Wailord",
+                  "level": 43
+                }
+              ],
+              "battle_idx": 83
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Surf Backtracking",
+          "order": 36,
+          "trainers": [
+            {
+              "class_name": "Firebreather Trey",
+              "pokemon": [
+                {
+                  "species": "Rapidash",
+                  "level": 41
+                },
+                {
+                  "species": "Arcanine",
+                  "level": 41
+                }
+              ],
+              "battle_idx": 84
+            },
+            {
+              "class_name": "Juggler Daxton",
+              "pokemon": [
+                {
+                  "species": "Magmar",
+                  "level": 41
+                },
+                {
+                  "species": "Machoke",
+                  "level": 41
+                }
+              ],
+              "battle_idx": 85
+            },
+            {
+              "class_name": "Firebreather Vic",
+              "pokemon": [
+                {
+                  "species": "Weezing",
+                  "level": 41
+                },
+                {
+                  "species": "Magmar",
+                  "level": 41
+                }
+              ],
+              "battle_idx": 86
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Naljo Ruins",
+          "order": 37,
+          "trainers": [],
+          "wild": {
+            "min_level": 10,
+            "max_level": 38,
+            "species": [
+              "BELDUM",
+              "CACNEA",
+              "CACTURNE",
+              "CHINGLING",
+              "DONPHAN",
+              "DUSKULL",
+              "GEODUDE",
+              "GOLBAT",
+              "GRAVELER",
+              "HAUNTER",
+              "KANGASKHAN",
+              "KOFFING",
+              "LAIRON",
+              "LOUDRED",
+              "LUNATONE",
+              "MACHOKE",
+              "MISDREAVUS",
+              "RHYHORN",
+              "SHUPPET",
+              "SLUGMA",
+              "SOLROCK",
+              "SPIRITOMB",
+              "SWABLU",
+              "TORKOAL",
+              "TRAPINCH",
+              "WEEZING"
+            ]
+          }
+        },
+        {
+          "name": "Route 79",
+          "order": 38,
+          "trainers": [
+            {
+              "class_name": "Pokefan Craig",
+              "pokemon": [
+                {
+                  "species": "Ponyta",
+                  "level": 38
+                },
+                {
+                  "species": "Ponyta",
+                  "level": 38
+                },
+                {
+                  "species": "Rapidash",
+                  "level": 39
+                }
+              ],
+              "battle_idx": 87
+            },
+            {
+              "class_name": "Cooltrainer Rhett",
+              "pokemon": [
+                {
+                  "species": "Absol",
+                  "level": 38
+                },
+                {
+                  "species": "Torkoal",
+                  "level": 39
+                },
+                {
+                  "species": "Victreebel",
+                  "level": 39
+                }
+              ],
+              "battle_idx": 88
+            },
+            {
+              "class_name": "Bird Keeper Chase",
+              "pokemon": [
+                {
+                  "species": "Pidgeotto",
+                  "level": 38
+                },
+                {
+                  "species": "Fearow",
+                  "level": 39
+                }
+              ],
+              "battle_idx": 89
+            },
+            {
+              "class_name": "Cooltrainer Lacey",
+              "pokemon": [
+                {
+                  "species": "Breloom",
+                  "level": 38
+                },
+                {
+                  "species": "Yanmega",
+                  "level": 39
+                }
+              ],
+              "battle_idx": 90
+            },
+            {
+              "class_name": "Officer Paulie",
+              "pokemon": [
+                {
+                  "species": "Electabuzz",
+                  "level": 43
+                },
+                {
+                  "species": "Magmar",
+                  "level": 43
+                }
+              ],
+              "battle_idx": 91
+            },
+            {
+              "class_name": "Sailor Robert",
+              "pokemon": [
+                {
+                  "species": "Seaking",
+                  "level": 39
+                },
+                {
+                  "species": "Slowbro",
+                  "level": 40
+                },
+                {
+                  "species": "Slowking",
+                  "level": 41
+                }
+              ],
+              "battle_idx": 92
+            },
+            {
+              "class_name": "Fisher Levy",
+              "pokemon": [
+                {
+                  "species": "Blastoise",
+                  "level": 40
+                },
+                {
+                  "species": "Gyarados",
+                  "level": 40
+                }
+              ],
+              "battle_idx": 93
+            },
+            {
+              "class_name": "Bird Keeper Murphy",
+              "pokemon": [
+                {
+                  "species": "Fearow",
+                  "level": 40
+                },
+                {
+                  "species": "Gyarados",
+                  "level": 41
+                }
+              ],
+              "battle_idx": 94
+            },
+            {
+              "class_name": "Sailor Reed",
+              "pokemon": [
+                {
+                  "species": "Tentacruel",
+                  "level": 41
+                },
+                {
+                  "species": "Slowbro",
+                  "level": 41
+                }
+              ],
+              "battle_idx": 95
+            },
+            {
+              "class_name": "Cooltrainer Connor",
+              "pokemon": [
+                {
+                  "species": "Rapidash",
+                  "level": 40
+                },
+                {
+                  "species": "Weavile",
+                  "level": 41
+                }
+              ],
+              "battle_idx": 96
+            },
+            {
+              "class_name": "Officer Grady",
+              "pokemon": [
+                {
+                  "species": "Arcanine",
+                  "level": 41
+                },
+                {
+                  "species": "Lucario",
+                  "level": 42
+                },
+                {
+                  "species": "Pidgeot",
+                  "level": 42
+                }
+              ],
+              "battle_idx": 97
+            },
+            {
+              "class_name": "Officer John",
+              "pokemon": [
+                {
+                  "species": "Weavile",
+                  "level": 41
+                },
+                {
+                  "species": "Ampharos",
+                  "level": 42
+                }
+              ],
+              "battle_idx": 98
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Saxifrage Island",
+          "order": 39,
+          "trainers": [],
+          "wild": {
+            "min_level": 30,
+            "max_level": 30,
+            "species": [
+              "SEAKING",
+              "TENTACRUEL",
+              "WAILORD"
+            ]
+          }
+        },
+        {
+          "name": "Clathrite Tunnel",
+          "order": 40,
+          "trainers": [],
+          "wild": {
+            "min_level": 10,
+            "max_level": 40,
+            "species": [
+              "ABSOL",
+              "BRONZOR",
+              "CHINCHOU",
+              "CHINGLING",
+              "GLACEON",
+              "GOLBAT",
+              "HARIYAMA",
+              "PILOSWINE",
+              "SLOWPOKE",
+              "SNEASEL",
+              "SWINUB",
+              "ZUBAT"
+            ]
+          }
+        },
+        {
+          "name": "Route 84",
+          "order": 41,
+          "trainers": [
+            {
+              "class_name": "Cooltrainer Cedric",
+              "pokemon": [
+                {
+                  "species": "Forretress",
+                  "level": 43
+                },
+                {
+                  "species": "Breloom",
+                  "level": 43
+                }
+              ],
+              "battle_idx": 99
+            },
+            {
+              "class_name": "Hiker Saul",
+              "pokemon": [
+                {
+                  "species": "Graveler",
+                  "level": 45
+                },
+                {
+                  "species": "Crobat",
+                  "level": 46
+                },
+                {
+                  "species": "Golem",
+                  "level": 47
+                }
+              ],
+              "battle_idx": 100
+            }
+          ],
+          "wild": {
+            "min_level": 32,
+            "max_level": 36,
+            "species": [
+              "ABSOL",
+              "GLALIE",
+              "GOLBAT",
+              "METANG",
+              "SNEASEL",
+              "SNORUNT"
+            ]
+          }
+        },
+        {
+          "name": "Phlox Town",
+          "order": 42,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Algernon Labs",
+          "order": 43,
+          "trainers": [
+            {
+              "class_name": "Officer Dean",
+              "pokemon": [
+                {
+                  "species": "Machoke",
+                  "level": 44
+                },
+                {
+                  "species": "Arcanine",
+                  "level": 45
+                }
+              ],
+              "battle_idx": 101
+            },
+            {
+              "class_name": "Scientist No. 09",
+              "pokemon": [
+                {
+                  "species": "Haunter",
+                  "level": 45
+                },
+                {
+                  "species": "Froslass",
+                  "level": 46
+                }
+              ],
+              "battle_idx": 102
+            },
+            {
+              "class_name": "Scientist No. 10",
+              "pokemon": [
+                {
+                  "species": "Solrock",
+                  "level": 45
+                },
+                {
+                  "species": "Lunatone",
+                  "level": 46
+                }
+              ],
+              "battle_idx": 103
+            },
+            {
+              "class_name": "Scientist No. 07",
+              "pokemon": [
+                {
+                  "species": "Ditto",
+                  "level": 45
+                },
+                {
+                  "species": "Magneton",
+                  "level": 46
+                },
+                {
+                  "species": "Espeon",
+                  "level": 46
+                }
+              ],
+              "battle_idx": 104
+            },
+            {
+              "class_name": "Scientist No. 08",
+              "pokemon": [
+                {
+                  "species": "Porygon",
+                  "level": 46
+                },
+                {
+                  "species": "Kadabra",
+                  "level": 47
+                }
+              ],
+              "battle_idx": 105
+            },
+            {
+              "class_name": "Scientist No. 06",
+              "pokemon": [
+                {
+                  "species": "Kadabra",
+                  "level": 48
+                },
+                {
+                  "species": "Xatu",
+                  "level": 48
+                },
+                {
+                  "species": "Alakazam",
+                  "level": 49
+                }
+              ],
+              "battle_idx": 106
+            },
+            {
+              "class_name": "Scientist No. 05",
+              "pokemon": [
+                {
+                  "species": "Gardevoir",
+                  "level": 48
+                },
+                {
+                  "species": "Slowbro",
+                  "level": 49
+                }
+              ],
+              "battle_idx": 107
+            },
+            {
+              "class_name": "Scientist No. 04",
+              "pokemon": [
+                {
+                  "species": "Gardevoir",
+                  "level": 49
+                },
+                {
+                  "species": "Weezing",
+                  "level": 50
+                }
+              ],
+              "battle_idx": 108
+            },
+            {
+              "class_name": "Scientist No. 03",
+              "pokemon": [
+                {
+                  "species": "Weavile",
+                  "level": 48
+                },
+                {
+                  "species": "Slowbro",
+                  "level": 50
+                }
+              ],
+              "battle_idx": 109
+            },
+            {
+              "class_name": "Scientist No. 02",
+              "pokemon": [
+                {
+                  "species": "Gardevoir",
+                  "level": 50
+                },
+                {
+                  "species": "Slowbro",
+                  "level": 51
+                }
+              ],
+              "battle_idx": 110
+            },
+            {
+              "class_name": "Scientist No. 01",
+              "pokemon": [
+                {
+                  "species": "Weezing",
+                  "level": 50
+                },
+                {
+                  "species": "Slowking",
+                  "level": 51
+                }
+              ],
+              "battle_idx": 111
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Route 86",
+          "order": 44,
+          "trainers": [
+            {
+              "class_name": "Sage Koiking",
+              "pokemon": [
+                {
+                  "species": "Bronzong",
+                  "level": 80
+                },
+                {
+                  "species": "Magikarp",
+                  "level": 100
+                }
+              ],
+              "battle_idx": 112
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Route 87",
+          "order": 45,
+          "trainers": [],
+          "wild": {
+            "min_level": 42,
+            "max_level": 48,
+            "species": [
+              "GYARADOS",
+              "TENTACRUEL",
+              "WAILMER"
+            ]
+          }
+        },
+        {
+          "name": "Seneca Caverns",
+          "order": 46,
+          "trainers": [
+            {
+              "class_name": "Bird Keeper Edgar",
+              "pokemon": [
+                {
+                  "species": "Pidgeot",
+                  "level": 49
+                },
+                {
+                  "species": "Fearow",
+                  "level": 49
+                }
+              ],
+              "battle_idx": 113
+            },
+            {
+              "class_name": "Hiker Jevan",
+              "pokemon": [
+                {
+                  "species": "Steelix",
+                  "level": 51
+                },
+                {
+                  "species": "Golem",
+                  "level": 51
+                },
+                {
+                  "species": "Rhydon",
+                  "level": 52
+                }
+              ],
+              "battle_idx": 114
+            },
+            {
+              "class_name": "Pokefan Kent",
+              "pokemon": [
+                {
+                  "species": "Vaporeon",
+                  "level": 52
+                },
+                {
+                  "species": "Jolteon",
+                  "level": 52
+                },
+                {
+                  "species": "Flareon",
+                  "level": 52
+                }
+              ],
+              "battle_idx": 115
+            },
+            {
+              "class_name": "Scientist No. 11",
+              "pokemon": [
+                {
+                  "species": "Kadabra",
+                  "level": 53
+                },
+                {
+                  "species": "Solrock",
+                  "level": 53
+                }
+              ],
+              "battle_idx": 116
+            },
+            {
+              "class_name": "Firebreather Lex",
+              "pokemon": [
+                {
+                  "species": "Ninetales",
+                  "level": 53
+                },
+                {
+                  "species": "Camerupt",
+                  "level": 53
+                }
+              ],
+              "battle_idx": 117
+            }
+          ],
+          "wild": {
+            "min_level": 35,
+            "max_level": 40,
+            "species": [
+              "AZUMARILL",
+              "GOLBAT"
+            ]
+          }
+        },
+        {
+          "name": "Route 65",
+          "order": 47,
+          "trainers": [
+            {
+              "class_name": "Juggler Abner",
+              "pokemon": [
+                {
+                  "species": "Gardevoir",
+                  "level": 50
+                },
+                {
+                  "species": "Lucario",
+                  "level": 50
+                }
+              ],
+              "battle_idx": 118
+            },
+            {
+              "class_name": "Pokemaniac Seth",
+              "pokemon": [
+                {
+                  "species": "Blastoise",
+                  "level": 49
+                },
+                {
+                  "species": "Charizard",
+                  "level": 48
+                }
+              ],
+              "battle_idx": 119
+            }
+          ],
+          "wild": {
+            "min_level": 40,
+            "max_level": 45,
+            "species": [
+              "GYARADOS",
+              "TENTACOOL",
+              "TENTACRUEL"
+            ]
+          }
+        },
+        {
+          "name": "Rijon League",
+          "order": 48,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "International Tunnel",
+          "order": 49,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 58",
+          "order": 50,
+          "trainers": [
+            {
+              "class_name": "Lass Jana",
+              "pokemon": [
+                {
+                  "species": "Gallade",
+                  "level": 59
+                },
+                {
+                  "species": "Lucario",
+                  "level": 60
+                }
+              ],
+              "battle_idx": 120
+            },
+            {
+              "class_name": "Lass Debby",
+              "pokemon": [
+                {
+                  "species": "Machoke",
+                  "level": 57
+                },
+                {
+                  "species": "Breloom",
+                  "level": 59
+                },
+                {
+                  "species": "Machamp",
+                  "level": 59
+                }
+              ],
+              "battle_idx": 121
+            },
+            {
+              "class_name": "Camper Tanner",
+              "pokemon": [
+                {
+                  "species": "Lucario",
+                  "level": 58
+                },
+                {
+                  "species": "Machamp",
+                  "level": 59
+                }
+              ],
+              "battle_idx": 122
+            }
+          ],
+          "wild": {
+            "min_level": 39,
+            "max_level": 42,
+            "species": [
+              "ARON",
+              "CACNEA",
+              "CACTURNE",
+              "PIDGEOTTO",
+              "VIBRAVA",
+              "VULPIX"
+            ]
+          }
+        },
+        {
+          "name": "Castro Valley",
+          "order": 51,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Castro Forest",
+          "order": 52,
+          "trainers": [
+            {
+              "class_name": "Sage Osamu",
+              "pokemon": [
+                {
+                  "species": "Weepinbell",
+                  "level": 60
+                },
+                {
+                  "species": "Victreebel",
+                  "level": 60
+                }
+              ],
+              "battle_idx": 123
+            },
+            {
+              "class_name": "Sage Taro",
+              "pokemon": [
+                {
+                  "species": "Haunter",
+                  "level": 60
+                },
+                {
+                  "species": "Gengar",
+                  "level": 60
+                },
+                {
+                  "species": "Misdreavus",
+                  "level": 61
+                }
+              ],
+              "battle_idx": 124
+            }
+          ],
+          "wild": {
+            "min_level": 30,
+            "max_level": 35,
+            "species": [
+              "MASQUERAIN",
+              "SURSKIT"
+            ]
+          }
+        },
+        {
+          "name": "Route 62",
+          "order": 53,
+          "trainers": [
+            {
+              "class_name": "Sage Gorou",
+              "pokemon": [
+                {
+                  "species": "Victreebel",
+                  "level": 60
+                },
+                {
+                  "species": "Jolteon",
+                  "level": 60
+                },
+                {
+                  "species": "Butterfree",
+                  "level": 61
+                }
+              ],
+              "battle_idx": 125
+            },
+            {
+              "class_name": "Blackbelt Fu",
+              "pokemon": [
+                {
+                  "species": "Kangaskhan",
+                  "level": 61
+                },
+                {
+                  "species": "Machamp",
+                  "level": 61
+                }
+              ],
+              "battle_idx": 126
+            }
+          ],
+          "wild": {
+            "min_level": 28,
+            "max_level": 31,
+            "species": [
+              "EXEGGCUTE",
+              "PARASECT",
+              "PIDGEOTTO",
+              "SHINX",
+              "YANMA"
+            ]
+          }
+        },
+        {
+          "name": "Route 61",
+          "order": 54,
+          "trainers": [
+            {
+              "class_name": "Fisher Lou",
+              "pokemon": [
+                {
+                  "species": "Ludicolo",
+                  "level": 60
+                },
+                {
+                  "species": "Lanturn",
+                  "level": 61
+                },
+                {
+                  "species": "Wailord",
+                  "level": 61
+                }
+              ],
+              "battle_idx": 127
+            },
+            {
+              "class_name": "Fisher Markus",
+              "pokemon": [
+                {
+                  "species": "Blastoise",
+                  "level": 61
+                },
+                {
+                  "species": "Wailord",
+                  "level": 62
+                }
+              ],
+              "battle_idx": 128
+            },
+            {
+              "class_name": "Fisher Gus",
+              "pokemon": [
+                {
+                  "species": "Milotic",
+                  "level": 60
+                },
+                {
+                  "species": "Masquerain",
+                  "level": 62
+                },
+                {
+                  "species": "Milotic",
+                  "level": 64
+                }
+              ],
+              "battle_idx": 129
+            }
+          ],
+          "wild": {
+            "min_level": 40,
+            "max_level": 40,
+            "species": [
+              "CHINCHOU",
+              "LANTURN"
+            ]
+          }
+        },
+        {
+          "name": "Route 60",
+          "order": 55,
+          "trainers": [],
+          "wild": {
+            "min_level": 40,
+            "max_level": 40,
+            "species": [
+              "CHINCHOU",
+              "LANTURN"
+            ]
+          }
+        },
+        {
+          "name": "Power Plant",
+          "order": 56,
+          "trainers": [
+            {
+              "class_name": "Lass Lucia",
+              "pokemon": [
+                {
+                  "species": "Weepinbell",
+                  "level": 64
+                },
+                {
+                  "species": "Parasect",
+                  "level": 65
+                }
+              ],
+              "battle_idx": 130
+            },
+            {
+              "class_name": "Lass Roxy",
+              "pokemon": [
+                {
+                  "species": "Venusaur",
+                  "level": 64
+                },
+                {
+                  "species": "Exeggutor",
+                  "level": 65
+                }
+              ],
+              "battle_idx": 131
+            },
+            {
+              "class_name": "Cooltrainer Lucas",
+              "pokemon": [
+                {
+                  "species": "Tangrowth",
+                  "level": 63
+                },
+                {
+                  "species": "Breloom",
+                  "level": 64
+                }
+              ],
+              "battle_idx": 132
+            },
+            {
+              "class_name": "Super Nerd Hunter",
+              "pokemon": [
+                {
+                  "species": "Raichu",
+                  "level": 62
+                },
+                {
+                  "species": "Magneton",
+                  "level": 64
+                }
+              ],
+              "battle_idx": 133
+            },
+            {
+              "class_name": "Cooltrainer Andy",
+              "pokemon": [
+                {
+                  "species": "Magneton",
+                  "level": 62
+                },
+                {
+                  "species": "Luxray",
+                  "level": 63
+                }
+              ],
+              "battle_idx": 134
+            }
+          ],
+          "wild": {
+            "min_level": 35,
+            "max_level": 53,
+            "species": [
+              "ELECTABUZZ",
+              "ELEKID",
+              "FLAAFFY",
+              "JOLTEON",
+              "MAGNEMITE",
+              "MAGNETON",
+              "MANECTRIC",
+              "MAREEP",
+              "PIKACHU",
+              "RAICHU"
+            ]
+          }
+        },
+        {
+          "name": "Moraga Town",
+          "order": 57,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Jaeru City",
+          "order": 58,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 59",
+          "order": 59,
+          "trainers": [
+            {
+              "class_name": "Firebreather Garth",
+              "pokemon": [
+                {
+                  "species": "Camerupt",
+                  "level": 61
+                },
+                {
+                  "species": "Arcanine",
+                  "level": 62
+                }
+              ],
+              "battle_idx": 135
+            },
+            {
+              "class_name": "Juggler Cesar",
+              "pokemon": [
+                {
+                  "species": "Kadabra",
+                  "level": 61
+                },
+                {
+                  "species": "Alakazam",
+                  "level": 61
+                }
+              ],
+              "battle_idx": 136
+            }
+          ],
+          "wild": {
+            "min_level": 34,
+            "max_level": 37,
+            "species": [
+              "FEAROW",
+              "KIRLIA",
+              "PIDGEOTTO",
+              "PIDGEY",
+              "SPEAROW",
+              "SWELLOW",
+              "TAILLOW"
+            ]
+          }
+        },
+        {
+          "name": "Silk Tunnel",
+          "order": 60,
+          "trainers": [
+            {
+              "class_name": "Hiker Nelson",
+              "pokemon": [
+                {
+                  "species": "Graveler",
+                  "level": 63
+                },
+                {
+                  "species": "Aggron",
+                  "level": 66
+                },
+                {
+                  "species": "Golem",
+                  "level": 67
+                }
+              ],
+              "battle_idx": 137
+            },
+            {
+              "class_name": "Hiker Roger",
+              "pokemon": [
+                {
+                  "species": "Camerupt",
+                  "level": 65
+                },
+                {
+                  "species": "Golem",
+                  "level": 66
+                },
+                {
+                  "species": "Gliscor",
+                  "level": 68
+                }
+              ],
+              "battle_idx": 138
+            },
+            {
+              "class_name": "Picnicker Lisa",
+              "pokemon": [
+                {
+                  "species": "Venusaur",
+                  "level": 66
+                },
+                {
+                  "species": "Parasect",
+                  "level": 68
+                }
+              ],
+              "battle_idx": 139
+            },
+            {
+              "class_name": "Hiker Aiden",
+              "pokemon": [
+                {
+                  "species": "Crobat",
+                  "level": 66
+                },
+                {
+                  "species": "Rhydon",
+                  "level": 67
+                },
+                {
+                  "species": "Rhyperior",
+                  "level": 69
+                }
+              ],
+              "battle_idx": 140
+            },
+            {
+              "class_name": "Hiker Charlie",
+              "pokemon": [
+                {
+                  "species": "Torkoal",
+                  "level": 64
+                },
+                {
+                  "species": "Forretress",
+                  "level": 65
+                },
+                {
+                  "species": "Flygon",
+                  "level": 68
+                }
+              ],
+              "battle_idx": 141
+            },
+            {
+              "class_name": "Hiker Ralph",
+              "pokemon": [
+                {
+                  "species": "Onix",
+                  "level": 64
+                },
+                {
+                  "species": "Steelix",
+                  "level": 65
+                }
+              ],
+              "battle_idx": 142
+            }
+          ],
+          "wild": {
+            "min_level": 36,
+            "max_level": 41,
+            "species": [
+              "ABRA",
+              "GEODUDE",
+              "GOLBAT",
+              "GRAVELER",
+              "KADABRA",
+              "KOFFING",
+              "MACHOKE",
+              "MAGBY",
+              "MAGMAR",
+              "ONIX",
+              "PONYTA",
+              "SLOWPOKE",
+              "STEELIX",
+              "WEEZING",
+              "ZUBAT"
+            ]
+          }
+        },
+        {
+          "name": "Route 63",
+          "order": 61,
+          "trainers": [
+            {
+              "class_name": "Lass Maggie",
+              "pokemon": [
+                {
+                  "species": "Lucario",
+                  "level": 69
+                },
+                {
+                  "species": "Mismagius",
+                  "level": 70
+                },
+                {
+                  "species": "Xatu",
+                  "level": 72
+                }
+              ],
+              "battle_idx": 143
+            },
+            {
+              "class_name": "Bug Catcher Luke",
+              "pokemon": [
+                {
+                  "species": "Masquerain",
+                  "level": 68
+                },
+                {
+                  "species": "Butterfree",
+                  "level": 70
+                }
+              ],
+              "battle_idx": 144
+            }
+          ],
+          "wild": {
+            "min_level": 39,
+            "max_level": 43,
+            "species": [
+              "EXEGGCUTE",
+              "FEAROW",
+              "LOUDRED",
+              "SPEAROW",
+              "SWELLOW",
+              "TAILLOW"
+            ]
+          }
+        },
+        {
+          "name": "Hayward City",
+          "order": 62,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 64",
+          "order": 63,
+          "trainers": [],
+          "wild": {
+            "min_level": 37,
+            "max_level": 47,
+            "species": [
+              "ARON",
+              "EEVEE",
+              "PIDGEOTTO",
+              "PIDGEY",
+              "RALTS",
+              "TAILLOW",
+              "YANMA"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "name": "Northern Rijon",
+      "parent_id": "s2",
+      "branch_label": "Northern path (Rt 51\u219250\u219249)",
+      "locations": [
+        {
+          "name": "Route 51",
+          "order": 64,
+          "trainers": [
+            {
+              "class_name": "Super Nerd Enzo",
+              "pokemon": [
+                {
+                  "species": "Dusclops",
+                  "level": 69
+                },
+                {
+                  "species": "Absol",
+                  "level": 71
+                }
+              ],
+              "battle_idx": 145
+            }
+          ],
+          "wild": {
+            "min_level": 47,
+            "max_level": 56,
+            "species": [
+              "ABRA",
+              "BELLSPROUT",
+              "CATERPIE",
+              "METAPOD",
+              "PIDGEY",
+              "WEEPINBELL"
+            ]
+          }
+        },
+        {
+          "name": "Route 50",
+          "order": 65,
+          "trainers": [
+            {
+              "class_name": "Bug Catcher Juan",
+              "pokemon": [
+                {
+                  "species": "Butterfree",
+                  "level": 77
+                },
+                {
+                  "species": "Masquerain",
+                  "level": 78
+                }
+              ],
+              "battle_idx": 146
+            },
+            {
+              "class_name": "Super Nerd Bram",
+              "pokemon": [
+                {
+                  "species": "Slowbro",
+                  "level": 74
+                },
+                {
+                  "species": "Gardevoir",
+                  "level": 74
+                }
+              ],
+              "battle_idx": 147
+            }
+          ],
+          "wild": {
+            "min_level": 48,
+            "max_level": 57,
+            "species": [
+              "ABRA",
+              "CATERPIE",
+              "KADABRA",
+              "METAPOD",
+              "PIDGEY"
+            ]
+          }
+        },
+        {
+          "name": "Route 49",
+          "order": 66,
+          "trainers": [
+            {
+              "class_name": "Bird Keeper Keanu",
+              "pokemon": [
+                {
+                  "species": "Fearow",
+                  "level": 72
+                },
+                {
+                  "species": "Fearow",
+                  "level": 73
+                }
+              ],
+              "battle_idx": 148
+            }
+          ],
+          "wild": {
+            "min_level": 50,
+            "max_level": 60,
+            "species": [
+              "TENTACOOL",
+              "TENTACRUEL"
+            ]
+          }
+        },
+        {
+          "name": "Owsauri City",
+          "order": 67,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 66",
+          "order": 68,
+          "trainers": [],
+          "wild": {
+            "min_level": 50,
+            "max_level": 60,
+            "species": [
+              "GYARADOS",
+              "TENTACRUEL"
+            ]
+          }
+        },
+        {
+          "name": "Old Route 48",
+          "order": 69,
+          "trainers": [],
+          "wild": {
+            "min_level": 50,
+            "max_level": 55,
+            "species": [
+              "TENTACOOL",
+              "TENTACRUEL"
+            ]
+          }
+        },
+        {
+          "name": "Old Route 47",
+          "order": 70,
+          "trainers": [],
+          "wild": {
+            "min_level": 50,
+            "max_level": 60,
+            "species": [
+              "TENTACOOL",
+              "TENTACRUEL"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3a",
+      "name": "Goldenrod path",
+      "parent_id": "s3",
+      "branch_label": "Goldenrod Cape",
+      "locations": [
+        {
+          "name": "Route 34",
+          "order": 71,
+          "trainers": [
+            {
+              "class_name": "Pokefan Brandon",
+              "pokemon": [
+                {
+                  "species": "Ampharos",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 149
+            },
+            {
+              "class_name": "Cooltrainer Gina",
+              "pokemon": [
+                {
+                  "species": "Breloom",
+                  "level": 74
+                },
+                {
+                  "species": "Breloom",
+                  "level": 74
+                }
+              ],
+              "battle_idx": 150
+            },
+            {
+              "class_name": "Bird Keeper Samuel",
+              "pokemon": [
+                {
+                  "species": "Fearow",
+                  "level": 76
+                },
+                {
+                  "species": "Fearow",
+                  "level": 76
+                }
+              ],
+              "battle_idx": 151
+            },
+            {
+              "class_name": "Super Nerd Teru",
+              "pokemon": [
+                {
+                  "species": "Magneton",
+                  "level": 81
+                },
+                {
+                  "species": "Porygon-Z",
+                  "level": 83
+                }
+              ],
+              "battle_idx": 152
+            },
+            {
+              "class_name": "Officer Keith",
+              "pokemon": [
+                {
+                  "species": "Arcanine",
+                  "level": 83
+                }
+              ],
+              "battle_idx": 153
+            },
+            {
+              "class_name": "Pokemaniac Donald",
+              "pokemon": [
+                {
+                  "species": "Slowking",
+                  "level": 82
+                },
+                {
+                  "species": "Slowbro",
+                  "level": 81
+                }
+              ],
+              "battle_idx": 154
+            },
+            {
+              "class_name": "Super Nerd Eric",
+              "pokemon": [
+                {
+                  "species": "Weezing",
+                  "level": 82
+                },
+                {
+                  "species": "Ditto",
+                  "level": 83
+                }
+              ],
+              "battle_idx": 155
+            }
+          ],
+          "wild": {
+            "min_level": 45,
+            "max_level": 60,
+            "species": [
+              "TENTACOOL",
+              "TENTACRUEL"
+            ]
+          }
+        },
+        {
+          "name": "Goldenrod Cape",
+          "order": 72,
+          "trainers": [
+            {
+              "class_name": "Fisher Stanford",
+              "pokemon": [
+                {
+                  "species": "Milotic",
+                  "level": 79
+                },
+                {
+                  "species": "Gyarados",
+                  "level": 78
+                }
+              ],
+              "battle_idx": 156
+            },
+            {
+              "class_name": "Beauty Victoria",
+              "pokemon": [
+                {
+                  "species": "Furret",
+                  "level": 76
+                },
+                {
+                  "species": "Wigglytuff",
+                  "level": 76
+                },
+                {
+                  "species": "Pidgeot",
+                  "level": 78
+                }
+              ],
+              "battle_idx": 157
+            },
+            {
+              "class_name": "Beauty Bridget",
+              "pokemon": [
+                {
+                  "species": "Wigglytuff",
+                  "level": 77
+                },
+                {
+                  "species": "Lopunny",
+                  "level": 79
+                }
+              ],
+              "battle_idx": 158
+            },
+            {
+              "class_name": "Blackbelt Hideki",
+              "pokemon": [
+                {
+                  "species": "Machamp",
+                  "level": 80
+                },
+                {
+                  "species": "Machamp",
+                  "level": 82
+                }
+              ],
+              "battle_idx": 159
+            },
+            {
+              "class_name": "Blackbelt Hitoshi",
+              "pokemon": [
+                {
+                  "species": "Machamp",
+                  "level": 82
+                },
+                {
+                  "species": "Breloom",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 160
+            },
+            {
+              "class_name": "Blackbelt Aaron",
+              "pokemon": [
+                {
+                  "species": "Hitmonchan",
+                  "level": 82
+                },
+                {
+                  "species": "Hariyama",
+                  "level": 83
+                }
+              ],
+              "battle_idx": 161
+            },
+            {
+              "class_name": "Blackbelt Kiyo",
+              "pokemon": [
+                {
+                  "species": "Hitmonlee",
+                  "level": 83
+                },
+                {
+                  "species": "Hitmontop",
+                  "level": 83
+                }
+              ],
+              "battle_idx": 162
+            },
+            {
+              "class_name": "Psychic Franklin",
+              "pokemon": [
+                {
+                  "species": "Alakazam",
+                  "level": 85
+                }
+              ],
+              "battle_idx": 163
+            },
+            {
+              "class_name": "Medium Rebecca",
+              "pokemon": [
+                {
+                  "species": "Bronzong",
+                  "level": 83
+                },
+                {
+                  "species": "Dusclops",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 164
+            },
+            {
+              "class_name": "Medium Doris",
+              "pokemon": [
+                {
+                  "species": "Slowking",
+                  "level": 83
+                },
+                {
+                  "species": "Slowbro",
+                  "level": 84
+                }
+              ],
+              "battle_idx": 165
+            },
+            {
+              "class_name": "Psychic Jared",
+              "pokemon": [
+                {
+                  "species": "Chimecho",
+                  "level": 81
+                },
+                {
+                  "species": "Exeggutor",
+                  "level": 81
+                }
+              ],
+              "battle_idx": 166
+            }
+          ],
+          "wild": {
+            "min_level": 45,
+            "max_level": 60,
+            "species": [
+              "SURSKIT",
+              "TENTACOOL",
+              "TENTACRUEL"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3b",
+      "name": "Ilex/Azalea path",
+      "parent_id": "s3",
+      "branch_label": "Ilex Forest \u2192 Azalea",
+      "locations": [
+        {
+          "name": "Ilex Forest",
+          "order": 73,
+          "trainers": [
+            {
+              "class_name": "Lass Amy",
+              "pokemon": [
+                {
+                  "species": "Ariados",
+                  "level": 79
+                }
+              ],
+              "battle_idx": 167
+            },
+            {
+              "class_name": "Lass May",
+              "pokemon": [
+                {
+                  "species": "Masquerain",
+                  "level": 79
+                }
+              ],
+              "battle_idx": 168
+            },
+            {
+              "class_name": "Bug Catcher Al",
+              "pokemon": [
+                {
+                  "species": "Butterfree",
+                  "level": 77
+                },
+                {
+                  "species": "Yanmega",
+                  "level": 78
+                }
+              ],
+              "battle_idx": 169
+            },
+            {
+              "class_name": "Bug Catcher Josh",
+              "pokemon": [
+                {
+                  "species": "Parasect",
+                  "level": 80
+                },
+                {
+                  "species": "Scyther",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 170
+            },
+            {
+              "class_name": "Bug Catcher Benny",
+              "pokemon": [
+                {
+                  "species": "Volbeat",
+                  "level": 82
+                },
+                {
+                  "species": "Illumise",
+                  "level": 82
+                }
+              ],
+              "battle_idx": 171
+            }
+          ],
+          "wild": {
+            "min_level": 50,
+            "max_level": 60,
+            "species": [
+              "MARILL",
+              "SLOWPOKE",
+              "SURSKIT"
+            ]
+          }
+        },
+        {
+          "name": "Azalea Town",
+          "order": 74,
+          "trainers": [],
+          "wild": null
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "name": "Southern Rijon",
+      "parent_id": "s2",
+      "branch_label": "Southern path (Rt 52\u2192Eagulou)",
+      "locations": [
+        {
+          "name": "Route 52",
+          "order": 75,
+          "trainers": [
+            {
+              "class_name": "Fisher Miles",
+              "pokemon": [
+                {
+                  "species": "Lanturn",
+                  "level": 71
+                },
+                {
+                  "species": "Gyarados",
+                  "level": 73
+                },
+                {
+                  "species": "Feraligatr",
+                  "level": 74
+                }
+              ],
+              "battle_idx": 172
+            },
+            {
+              "class_name": "Cooltrainer Ivor",
+              "pokemon": [
+                {
+                  "species": "Magnezone",
+                  "level": 81
+                },
+                {
+                  "species": "Exploud",
+                  "level": 81
+                }
+              ],
+              "battle_idx": 173
+            },
+            {
+              "class_name": "Cooltrainer Lucy",
+              "pokemon": [
+                {
+                  "species": "Aggron",
+                  "level": 80
+                },
+                {
+                  "species": "Absol",
+                  "level": 81
+                },
+                {
+                  "species": "Magcargo",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 174
+            },
+            {
+              "class_name": "Psychic Dexter",
+              "pokemon": [
+                {
+                  "species": "Kadabra",
+                  "level": 74
+                },
+                {
+                  "species": "Solrock",
+                  "level": 75
+                }
+              ],
+              "battle_idx": 175
+            },
+            {
+              "class_name": "Medium Peggy",
+              "pokemon": [
+                {
+                  "species": "Haunter",
+                  "level": 74
+                },
+                {
+                  "species": "Drifblim",
+                  "level": 75
+                },
+                {
+                  "species": "Gengar",
+                  "level": 75
+                }
+              ],
+              "battle_idx": 176
+            },
+            {
+              "class_name": "Medium Laura",
+              "pokemon": [
+                {
+                  "species": "Mismagius",
+                  "level": 75
+                },
+                {
+                  "species": "Espeon",
+                  "level": 76
+                }
+              ],
+              "battle_idx": 177
+            },
+            {
+              "class_name": "Psychic Sidney",
+              "pokemon": [
+                {
+                  "species": "Xatu",
+                  "level": 74
+                },
+                {
+                  "species": "Lunatone",
+                  "level": 75
+                },
+                {
+                  "species": "Exeggutor",
+                  "level": 76
+                }
+              ],
+              "battle_idx": 178
+            }
+          ],
+          "wild": {
+            "min_level": 45,
+            "max_level": 47,
+            "species": [
+              "TENTACOOL",
+              "TENTACRUEL"
+            ]
+          }
+        },
+        {
+          "name": "Seashore City",
+          "order": 76,
+          "trainers": [],
+          "wild": {
+            "min_level": 40,
+            "max_level": 45,
+            "species": [
+              "MILOTIC",
+              "WAILMER"
+            ]
+          }
+        },
+        {
+          "name": "Route 53",
+          "order": 77,
+          "trainers": [],
+          "wild": {
+            "min_level": 44,
+            "max_level": 54,
+            "species": [
+              "BELLSPROUT",
+              "HITMONCHAN",
+              "HITMONLEE",
+              "PIDGEOTTO",
+              "PIDGEY",
+              "PIKACHU"
+            ]
+          }
+        },
+        {
+          "name": "Gravel Town",
+          "order": 78,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Merson Cave",
+          "order": 79,
+          "trainers": [
+            {
+              "class_name": "Lass Bronwyn",
+              "pokemon": [
+                {
+                  "species": "Raichu",
+                  "level": 76
+                },
+                {
+                  "species": "Wigglytuff",
+                  "level": 78
+                }
+              ],
+              "battle_idx": 179
+            },
+            {
+              "class_name": "Hiker Eli",
+              "pokemon": [
+                {
+                  "species": "Graveler",
+                  "level": 75
+                },
+                {
+                  "species": "Steelix",
+                  "level": 76
+                },
+                {
+                  "species": "Golem",
+                  "level": 76
+                }
+              ],
+              "battle_idx": 180
+            },
+            {
+              "class_name": "Bug Catcher Fritz",
+              "pokemon": [
+                {
+                  "species": "Butterfree",
+                  "level": 70
+                },
+                {
+                  "species": "Scizor",
+                  "level": 71
+                }
+              ],
+              "battle_idx": 181
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Merson City",
+          "order": 80,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Route 54",
+          "order": 81,
+          "trainers": [
+            {
+              "class_name": "Sage Tenzin",
+              "pokemon": [
+                {
+                  "species": "Drifblim",
+                  "level": 77
+                },
+                {
+                  "species": "Spiritomb",
+                  "level": 78
+                },
+                {
+                  "species": "Dusclops",
+                  "level": 78
+                }
+              ],
+              "battle_idx": 182
+            },
+            {
+              "class_name": "Lass Jan",
+              "pokemon": [
+                {
+                  "species": "Wigglytuff",
+                  "level": 78
+                },
+                {
+                  "species": "Wigglytuff",
+                  "level": 78
+                }
+              ],
+              "battle_idx": 183
+            },
+            {
+              "class_name": "Camper Otis",
+              "pokemon": [
+                {
+                  "species": "Relicanth",
+                  "level": 78
+                },
+                {
+                  "species": "Blastoise",
+                  "level": 78
+                }
+              ],
+              "battle_idx": 184
+            }
+          ],
+          "wild": {
+            "min_level": 44,
+            "max_level": 51,
+            "species": [
+              "ABRA",
+              "BELLSPROUT",
+              "KIRLIA",
+              "PIDGEOTTO",
+              "PIDGEY",
+              "RALTS",
+              "WEEPINBELL"
+            ]
+          }
+        },
+        {
+          "name": "Route 55",
+          "order": 82,
+          "trainers": [
+            {
+              "class_name": "Hiker Kip",
+              "pokemon": [
+                {
+                  "species": "Weezing",
+                  "level": 78
+                },
+                {
+                  "species": "Camerupt",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 185
+            },
+            {
+              "class_name": "Hiker Johan",
+              "pokemon": [
+                {
+                  "species": "Golem",
+                  "level": 78
+                },
+                {
+                  "species": "Steelix",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 186
+            }
+          ],
+          "wild": {
+            "min_level": 43,
+            "max_level": 47,
+            "species": [
+              "ABRA",
+              "ARON",
+              "LAIRON",
+              "MACHOKE",
+              "MACHOP",
+              "PIDGEOTTO",
+              "PIDGEY"
+            ]
+          }
+        },
+        {
+          "name": "Mt Boulder",
+          "order": 83,
+          "trainers": [],
+          "wild": {
+            "min_level": 40,
+            "max_level": 45,
+            "species": [
+              "GOLDEEN",
+              "MAGIKARP",
+              "RELICANTH",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Eagulou City",
+          "order": 84,
+          "trainers": [],
+          "wild": {
+            "min_level": 35,
+            "max_level": 40,
+            "species": [
+              "TAILLOW",
+              "TENTACOOL",
+              "TENTACRUEL"
+            ]
+          }
+        },
+        {
+          "name": "Eagulou Park",
+          "order": 85,
+          "trainers": [
+            {
+              "class_name": "Sailor Poul",
+              "pokemon": [
+                {
+                  "species": "Tentacruel",
+                  "level": 77
+                },
+                {
+                  "species": "Tentacruel",
+                  "level": 78
+                }
+              ],
+              "battle_idx": 187
+            }
+          ],
+          "wild": {
+            "min_level": 40,
+            "max_level": 45,
+            "species": [
+              "GOLDEEN",
+              "GYARADOS",
+              "RELICANTH",
+              "SEAKING",
+              "SURSKIT",
+              "TENTACOOL"
+            ]
+          }
+        },
+        {
+          "name": "Route 56",
+          "order": 86,
+          "trainers": [],
+          "wild": {
+            "min_level": 45,
+            "max_level": 55,
+            "species": [
+              "TENTACOOL",
+              "TENTACRUEL"
+            ]
+          }
+        },
+        {
+          "name": "Route 57",
+          "order": 87,
+          "trainers": [],
+          "wild": {
+            "min_level": 45,
+            "max_level": 55,
+            "species": [
+              "GOLDEEN",
+              "SEAKING"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "name": "Late Game",
+      "parent_id": null,
+      "branch_label": null,
+      "locations": [
+        {
+          "name": "Ember Brook",
+          "order": 88,
+          "trainers": [
+            {
+              "class_name": "Cheerleader Lyra",
+              "pokemon": [
+                {
+                  "species": "Wigglytuff",
+                  "level": 56
+                },
+                {
+                  "species": "Azumarill",
+                  "level": 55
+                }
+              ],
+              "battle_idx": 188
+            },
+            {
+              "class_name": "Picnicker Karen",
+              "pokemon": [
+                {
+                  "species": "Meganium",
+                  "level": 54
+                },
+                {
+                  "species": "Luxray",
+                  "level": 54
+                }
+              ],
+              "battle_idx": 189
+            },
+            {
+              "class_name": "Twins Sal&Daisy",
+              "pokemon": [
+                {
+                  "species": "Espeon",
+                  "level": 54
+                },
+                {
+                  "species": "Volbeat",
+                  "level": 55
+                }
+              ],
+              "battle_idx": 190
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Mt Ember",
+          "order": 89,
+          "trainers": [
+            {
+              "class_name": "Cooltrainer Julian",
+              "pokemon": [
+                {
+                  "species": "Typhlosion",
+                  "level": 56
+                },
+                {
+                  "species": "Alakazam",
+                  "level": 57
+                }
+              ],
+              "battle_idx": 191
+            },
+            {
+              "class_name": "Bird Keeper Bishop",
+              "pokemon": [
+                {
+                  "species": "Pidgeot",
+                  "level": 57
+                },
+                {
+                  "species": "Togekiss",
+                  "level": 59
+                }
+              ],
+              "battle_idx": 192
+            },
+            {
+              "class_name": "Officer McPherson",
+              "pokemon": [
+                {
+                  "species": "Crobat",
+                  "level": 56
+                },
+                {
+                  "species": "Arcanine",
+                  "level": 57
+                }
+              ],
+              "battle_idx": 193
+            },
+            {
+              "class_name": "Picnicker Grace",
+              "pokemon": [
+                {
+                  "species": "Lucario",
+                  "level": 56
+                },
+                {
+                  "species": "Swellow",
+                  "level": 55
+                },
+                {
+                  "species": "Torkoal",
+                  "level": 57
+                }
+              ],
+              "battle_idx": 194
+            },
+            {
+              "class_name": "Firebreather David",
+              "pokemon": [
+                {
+                  "species": "Ninetales",
+                  "level": 55
+                },
+                {
+                  "species": "Magcargo",
+                  "level": 54
+                }
+              ],
+              "battle_idx": 195
+            }
+          ],
+          "wild": null
+        },
+        {
+          "name": "Saffron City",
+          "order": 90,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Tunod Waterway",
+          "order": 91,
+          "trainers": [],
+          "wild": {
+            "min_level": 78,
+            "max_level": 82,
+            "species": [
+              "GYARADOS",
+              "TENTACRUEL",
+              "WAILORD"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s5a",
+      "name": "Rankor (Olcan Isle)",
+      "parent_id": "s5",
+      "branch_label": "Rankor branch",
+      "locations": [
+        {
+          "name": "Olcan Chine",
+          "order": 92,
+          "trainers": [],
+          "wild": {
+            "min_level": 30,
+            "max_level": 68,
+            "species": [
+              "ANORITH",
+              "GOLBAT",
+              "LILEEP",
+              "PARASECT",
+              "RELICANTH",
+              "SABLEYE",
+              "SLOWBRO",
+              "SLOWPOKE",
+              "ZUBAT"
+            ]
+          }
+        },
+        {
+          "name": "Olcan Isle",
+          "order": 93,
+          "trainers": [
+            {
+              "class_name": "Blackbelt Takato",
+              "pokemon": [
+                {
+                  "species": "Machamp",
+                  "level": 82
+                },
+                {
+                  "species": "Golem",
+                  "level": 82
+                }
+              ],
+              "battle_idx": 196
+            },
+            {
+              "class_name": "Hiker Dany",
+              "pokemon": [
+                {
+                  "species": "Golem",
+                  "level": 81
+                },
+                {
+                  "species": "Steelix",
+                  "level": 81
+                },
+                {
+                  "species": "Aggron",
+                  "level": 83
+                }
+              ],
+              "battle_idx": 197
+            },
+            {
+              "class_name": "Pokemaniac Rafael",
+              "pokemon": [
+                {
+                  "species": "Venusaur",
+                  "level": 80
+                },
+                {
+                  "species": "Typhlosion",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 198
+            }
+          ],
+          "wild": {
+            "min_level": 78,
+            "max_level": 80,
+            "species": [
+              "GYARADOS",
+              "RELICANTH",
+              "TENTACRUEL"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "s5b",
+      "name": "Tunod/Southerly",
+      "parent_id": "s5",
+      "branch_label": "Southerly \u2192 Espo Forest",
+      "locations": [
+        {
+          "name": "South Southerly",
+          "order": 94,
+          "trainers": [
+            {
+              "class_name": "Fisher Nile",
+              "pokemon": [
+                {
+                  "species": "Seaking",
+                  "level": 78
+                },
+                {
+                  "species": "Relicanth",
+                  "level": 78
+                },
+                {
+                  "species": "Gyarados",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 199
+            },
+            {
+              "class_name": "Beauty Ginger",
+              "pokemon": [
+                {
+                  "species": "Wailord",
+                  "level": 80
+                },
+                {
+                  "species": "Typhlosion",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 200
+            },
+            {
+              "class_name": "Super Nerd Dark",
+              "pokemon": [
+                {
+                  "species": "Blastoise",
+                  "level": 80
+                },
+                {
+                  "species": "Fearow",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 201
+            },
+            {
+              "class_name": "Youngster Meil",
+              "pokemon": [
+                {
+                  "species": "Froslass",
+                  "level": 80
+                },
+                {
+                  "species": "Flygon",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 202
+            },
+            {
+              "class_name": "Psychic Box",
+              "pokemon": [
+                {
+                  "species": "Xatu",
+                  "level": 80
+                },
+                {
+                  "species": "Aggron",
+                  "level": 80
+                },
+                {
+                  "species": "Weavile",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 203
+            },
+            {
+              "class_name": "Cooltrainer Alirio",
+              "pokemon": [
+                {
+                  "species": "Gliscor",
+                  "level": 80
+                },
+                {
+                  "species": "Vaporeon",
+                  "level": 80
+                },
+                {
+                  "species": "Scizor",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 204
+            },
+            {
+              "class_name": "Firebreather Ben",
+              "pokemon": [
+                {
+                  "species": "Wailord",
+                  "level": 80
+                },
+                {
+                  "species": "Froslass",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 205
+            },
+            {
+              "class_name": "Cooltrainer Jovan",
+              "pokemon": [
+                {
+                  "species": "Salamence",
+                  "level": 80
+                },
+                {
+                  "species": "Tyranitar",
+                  "level": 80
+                }
+              ],
+              "battle_idx": 206
+            },
+            {
+              "class_name": "Camper Klaus",
+              "pokemon": [
+                {
+                  "species": "Arcanine",
+                  "level": 80
+                },
+                {
+                  "species": "Ninetales",
+                  "level": 81
+                }
+              ],
+              "battle_idx": 207
+            },
+            {
+              "class_name": "Firebreather Barry",
+              "pokemon": [
+                {
+                  "species": "Ninetales",
+                  "level": 80
+                },
+                {
+                  "species": "Camerupt",
+                  "level": 81
+                }
+              ],
+              "battle_idx": 208
+            },
+            {
+              "class_name": "Hiker Marvolo",
+              "pokemon": [
+                {
+                  "species": "Rapidash",
+                  "level": 83
+                }
+              ],
+              "battle_idx": 209
+            },
+            {
+              "class_name": "Firebreather Henri",
+              "pokemon": [
+                {
+                  "species": "Charizard",
+                  "level": 82
+                },
+                {
+                  "species": "Typhlosion",
+                  "level": 82
+                }
+              ],
+              "battle_idx": 210
+            }
+          ],
+          "wild": {
+            "min_level": 78,
+            "max_level": 80,
+            "species": [
+              "GYARADOS",
+              "SEAKING",
+              "TENTACRUEL"
+            ]
+          }
+        },
+        {
+          "name": "Southerly City",
+          "order": 95,
+          "trainers": [],
+          "wild": null
+        },
+        {
+          "name": "Espo Clearing",
+          "order": 96,
+          "trainers": [
+            {
+              "class_name": "Cooltrainer Haley",
+              "pokemon": [
+                {
+                  "species": "Kadabra",
+                  "level": 79
+                },
+                {
+                  "species": "Alakazam",
+                  "level": 81
+                }
+              ],
+              "battle_idx": 211
+            }
+          ],
+          "wild": {
+            "min_level": 45,
+            "max_level": 55,
+            "species": [
+              "GYARADOS",
+              "MAGIKARP",
+              "YANMA"
+            ]
+          }
+        },
+        {
+          "name": "Espo Forest",
+          "order": 97,
+          "trainers": [
+            {
+              "class_name": "Psychic Ira",
+              "pokemon": [
+                {
+                  "species": "Alakazam",
+                  "level": 81
+                },
+                {
+                  "species": "Gengar",
+                  "level": 81
+                },
+                {
+                  "species": "Metagross",
+                  "level": 81
+                }
+              ],
+              "battle_idx": 212
+            },
+            {
+              "class_name": "Medium Sybill",
+              "pokemon": [
+                {
+                  "species": "Chimecho",
+                  "level": 82
+                },
+                {
+                  "species": "Bronzong",
+                  "level": 82
+                }
+              ],
+              "battle_idx": 213
+            },
+            {
+              "class_name": "Psychic Grady",
+              "pokemon": [
+                {
+                  "species": "Metagross",
+                  "level": 82
+                },
+                {
+                  "species": "Gallade",
+                  "level": 81
+                }
+              ],
+              "battle_idx": 214
+            },
+            {
+              "class_name": "Sage Isaiah",
+              "pokemon": [
+                {
+                  "species": "Bellsprout",
+                  "level": 85
+                },
+                {
+                  "species": "Weepinbell",
+                  "level": 83
+                }
+              ],
+              "battle_idx": 215
+            },
+            {
+              "class_name": "Super Nerd Zebulon",
+              "pokemon": [
+                {
+                  "species": "Mismagius",
+                  "level": 83
+                },
+                {
+                  "species": "Banette",
+                  "level": 82
+                }
+              ],
+              "battle_idx": 216
+            }
+          ],
+          "wild": {
+            "min_level": 54,
+            "max_level": 61,
+            "species": [
+              "CHIMECHO",
+              "ESPEON",
+              "GARDEVOIR",
+              "KADABRA",
+              "KIRLIA",
+              "MAWILE",
+              "METANG",
+              "MISDREAVUS"
+            ]
+          }
+        },
+        {
+          "name": "Mystery Zone",
+          "order": 98,
+          "trainers": [],
+          "wild": {
+            "min_level": 10,
+            "max_level": 15,
+            "species": [
+              "FEEBAS",
+              "TENTACOOL"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
