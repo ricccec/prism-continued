@@ -9,9 +9,9 @@ into a separate ROM via the `DEBUG_MODE` build flag. This doc covers:
 4. The `/patch/` bspcomp framework (post-build patcher)
 
 If you want to launch the game in a custom state (team, map, flags) *without*
-rebuilding, see [`devtools.md`](devtools.md) — the start-state tool covers
+rebuilding, see [pokeprism-devtools](https://github.com/ricccec/pokeprism-devtools) — the `prism-dev` tool covers
 that. The debug menu is the right call for one-off interactive tweaks; the
-start-state tool is for repeatable, version-controlled initial states.
+`prism-dev` tool is for repeatable, version-controlled initial states.
 
 ---
 

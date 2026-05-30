@@ -21,10 +21,10 @@ gfx/pics/*/shiny.pal
 *$py.class
 __pycache__/
 
-# devtools — generated artifacts
-tools/start-state/inventory.json
-tools/start-state/state.json
-tools/start-state/sav-backups/
+# devtools — generated artifacts (.devtools/ is gitignored except presets/)
+.devtools/inventory.json
+.devtools/state.json
+.devtools/sav-backups/
 
 # binaries
 *.exe
