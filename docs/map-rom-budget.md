@@ -97,6 +97,16 @@ Routes are slightly larger in footprint but compress marginally better (outdoor 
 
 Routes actually have **smaller scripts** than non-route maps on average. Cities, gyms, labs, and dungeons carry more complex event logic, so they dominate script size. NPC count is essentially identical across both categories (~4 per map).
 
+### Known dead-space cases
+
+Three maps have significant wasted block data worth revisiting if ROM budget tightens.
+
+**Route54** (30×9 = 270 B raw → 86 B LZ, 32%): columns 0–18 (19 of 30) are solid cliff (0x2c) on every row — 171 identical blocks with no events, warps, or connections touching them. All content is in columns 19–29. Trimming to 11×9 would require updating `mapgroup ROUTE_54, 9, 11`, all event x-coordinates (subtract 38 steps), and rebuilding the .ablk. Estimated LZ savings: ~25–30 bytes.
+
+**Route64** (45×9 = 405 B raw → 206 B LZ, 51%): the map acts as an L-junction — a short vertical strip on the left serving the Route59 south connection (bottom edge, cols 0–4 only) and a horizontal corridor on the right connecting Naljo Border to Hayward City. The left ~16 columns are very uniform. The LZ ratio is the worst among outdoor routes (51% vs. 61% average) because the block variety is high, making dead corners more expensive. A vertical split around column 17 would produce two cleaner maps but requires wiring a new connection, adjusting the wild tables, and re-targeting all events.
+
+**SeviiIsland1** (60×21 = 1,260 B raw → 498 B LZ, 38%): large water and cliff regions on opposite corners. Despite the wasted corners, the LZ ratio is already excellent (38%) because uniform areas compress to nearly nothing. The overhead of splitting (second set of headers, connection strip, re-wiring warps) would likely cost more bytes than it saves. Low priority.
+
 ### Cost estimate for a new route
 
 A typical outdoor route (medium-sized, ~270–360 B raw block data, ~6 trainers + items) would cost roughly:

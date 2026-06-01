@@ -25,6 +25,7 @@ __pycache__/
 .devtools/inventory.json
 .devtools/state.json
 .devtools/sav-backups/
+.devtools/map-renders/
 
 # binaries
 *.exe
