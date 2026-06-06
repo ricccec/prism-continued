@@ -63,4 +63,26 @@ make nodebug RGBDS="$HOME/rgbds-0.7.0/"
 
 This produces `pokeprism_nodebug.gbc` (2 MB Game Boy Color ROM).
 
+#### Tip: skip retyping `RGBDS=`
+
+The Makefile reads `RGBDS` from the environment, so export it once in your shell profile
+(`~/.zshrc` or `~/.bashrc`) and every build picks it up automatically:
+
+```bash
+export RGBDS="$HOME/rgbds-0.7.0/"
+```
+
+After that, plain `make nodebug` (and `make prism`, `make gbs`, …) just work.
+
+The build prints a flood of harmless `-Wobsolete` deprecation warnings, which can bury real
+errors. A handy shell alias to surface only the errors (with their reason lines):
+
+```bash
+# build, showing only the actual errors
+alias prism-errors='make nodebug 2>&1 | grep -A1 "^error:"'
+```
+
+RGBDS prints each error across two lines — the file/line trace, then the indented reason —
+so `-A1` is what makes the reason visible.
+
 [rainbow]: https://twitter.com/rainbowdevs
