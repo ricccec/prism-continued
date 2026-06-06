@@ -1310,6 +1310,9 @@ GameInit::
 	ld a, $90
 	ldh [hWY], a
 	call ApplyTilemapInVBlank
+	debug_mode_flag
+	jp c, _MainMenu
+	; jp _MainMenu
 	jp CrystalIntroSequence
 
 SECTION "Copyright GFX", ROMX
