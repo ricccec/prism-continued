@@ -24,8 +24,8 @@ pip3 install pypng
 The Homebrew formula only provides the latest RGBDS release, so build 0.7.0 manually:
 
 ```bash
-git clone --depth 1 --branch v0.7.0 https://github.com/gbdev/rgbds.git /tmp/rgbds-0.7.0
-cd /tmp/rgbds-0.7.0
+git clone --depth 1 --branch v0.7.0 https://github.com/gbdev/rgbds.git ~/rgbds-0.7.0
+cd ~/rgbds-0.7.0
 PATH="/opt/homebrew/opt/bison/bin:/opt/homebrew/bin:$PATH" \
   PKG_CONFIG_PATH="/opt/homebrew/lib/pkgconfig" \
   CXXFLAGS="-I/opt/homebrew/include" \
@@ -33,11 +33,14 @@ PATH="/opt/homebrew/opt/bison/bin:/opt/homebrew/bin:$PATH" \
   make -j$(sysctl -n hw.ncpu)
 ```
 
+> **Don't clone into `/tmp`** — its entries can be owned by `root` on macOS, which makes the
+> in-place `make` fail with `Permission denied`. Build under your home directory instead.
+
 Optionally install the binaries system-wide:
 
 ```bash
-cp /tmp/rgbds-0.7.0/rgbasm /tmp/rgbds-0.7.0/rgbfix \
-   /tmp/rgbds-0.7.0/rgblink /tmp/rgbds-0.7.0/rgbgfx \
+cp ~/rgbds-0.7.0/rgbasm ~/rgbds-0.7.0/rgbfix \
+   ~/rgbds-0.7.0/rgblink ~/rgbds-0.7.0/rgbgfx \
    /usr/local/bin/
 ```
 
@@ -55,7 +58,7 @@ make nodebug
 Otherwise, point make at the built binaries:
 
 ```bash
-make nodebug RGBDS="/tmp/rgbds-0.7.0/"
+make nodebug RGBDS="$HOME/rgbds-0.7.0/"
 ```
 
 This produces `pokeprism_nodebug.gbc` (2 MB Game Boy Color ROM).

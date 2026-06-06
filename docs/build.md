@@ -23,9 +23,9 @@
 # Homebrew dependencies
 brew install libpng pkg-config bison
 
-# Clone and build
-git clone --depth 1 --branch v0.7.0 https://github.com/gbdev/rgbds.git /tmp/rgbds-0.7.0
-cd /tmp/rgbds-0.7.0
+# Clone and build (use a user-writable path — see note below)
+git clone --depth 1 --branch v0.7.0 https://github.com/gbdev/rgbds.git ~/rgbds-0.7.0
+cd ~/rgbds-0.7.0
 PATH="/opt/homebrew/opt/bison/bin:/opt/homebrew/bin:$PATH" \
   PKG_CONFIG_PATH="/opt/homebrew/lib/pkgconfig" \
   CXXFLAGS="-I/opt/homebrew/include" \
@@ -33,10 +33,14 @@ PATH="/opt/homebrew/opt/bison/bin:/opt/homebrew/bin:$PATH" \
   make -j$(sysctl -n hw.ncpu)
 ```
 
+> **Don't clone into `/tmp`.** On macOS `/tmp` entries can be owned by `root`, which makes
+> the in-place `make` fail with `Permission denied` when writing `.o` files. Build under
+> your home directory (`~/rgbds-0.7.0`) instead.
+
 Optionally copy the binaries somewhere permanent:
 ```bash
-sudo cp /tmp/rgbds-0.7.0/rgbasm /tmp/rgbds-0.7.0/rgbfix \
-        /tmp/rgbds-0.7.0/rgblink /tmp/rgbds-0.7.0/rgbgfx \
+sudo cp ~/rgbds-0.7.0/rgbasm ~/rgbds-0.7.0/rgbfix \
+        ~/rgbds-0.7.0/rgblink ~/rgbds-0.7.0/rgbgfx \
         /usr/local/bin/
 ```
 
@@ -49,7 +53,7 @@ Or use [rgbenv](https://github.com/gbdev/rgbenv) (a RGBDS version manager) and a
 
 ```bash
 make nodebug                    # Release ROM (recommended starting point)
-make nodebug RGBDS="/path/to/"  # Use a specific RGBDS install
+make nodebug RGBDS="$HOME/rgbds-0.7.0/"  # Use a locally-built RGBDS (trailing slash required)
 make all                        # nodebug + debug ROM + GBS music file + freespace report
 make gbs                        # GBS music-only export
 make patch                      # IPS patch (needs baserom.gbc — Crystal 1.1)
