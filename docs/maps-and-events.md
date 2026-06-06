@@ -162,11 +162,14 @@ lives in banks $20–$35, scripts in $36–$44.
 ## Adding a New Map
 
 1. Create `maps/NewMapName.asm` following the structure above.
-2. Add the map ID to `constants/map_constants.asm`.
-3. Add width/height to `constants/map_dimension_constants.asm`.
-4. Add the map's `INCBIN` for block data in the appropriate map data section.
-5. Reference it from `maps.asm` with `INCLUDE "maps/NewMapName.asm"`.
-6. Ensure the linker script (`contents/romx.link`) has capacity in the target bank.
+2. Include `maps/NewMapName.asm` in `maps/map_scripts.asm`.
+3. Add the map header to `maps/map_headers.asm`.
+4. Add the secondary header to `maps/second_map_headers.asm` (can be in any bank).
+5. Add width/height to `constants/map_dimension_constants.asm`.
+6. Add the map's `INCBIN` for block data in `maps/blockdata.asm` (blk file can be anywhere; label must end with `_BlockData`).
+7. Ensure the linker script (`contents/romx.link`) has capacity in the target bank.
+
+The script header label must end with `_MapScriptHeader`; the event header label must end with `_MapEventHeader`.
 
 ---
 

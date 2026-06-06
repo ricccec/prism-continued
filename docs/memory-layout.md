@@ -109,7 +109,7 @@ These are the most commonly referenced variables. Full list in `wram.asm`.
 ### Flags
 | Symbol | Meaning |
 |--------|---------|
-| `wEventFlags` | Main event flag bitfield (~256 flags) |
+| `wEventFlags` | Main event flag bitfield (~2000 individual bit flags) |
 | `wVisitedSpawns` | Visited heal-point bitfield |
 | `wEngineFlags` | Persistent engine state flags |
 | `wPokedexOwned` | Pokédex caught bitfield |
