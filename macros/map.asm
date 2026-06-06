@@ -16,6 +16,7 @@ MACRO roam_map
 	db 0 ; end
 ENDM
 
+; Args: sprite, y, x, movement, palette, type, text, function, [std/mart_type, [mart_id,]] flag
 MACRO person_event
 	db \1 ; sprite
 	db \2 + 4 ; y
