@@ -185,6 +185,7 @@ ROMX $28
 	"Code 19"
 	"Map Scripts 14"
 	"Player Sprites 1"
+	"Map block data 11"
 
 ROMX $29
 	"Songs small 5"

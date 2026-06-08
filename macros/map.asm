@@ -89,8 +89,8 @@ MACRO dummy_warp
 	db -1, 0, 0
 ENDM
 
+; label, tileset, permission, landmark, music, phone service flag, time of day, fishing group
 MACRO map_header
-	; label, tileset, permission, location, music, phone service flag, time of day, fishing group
 \1_MapHeader:
 	db BANK(\1_SecondMapHeader), \2, \3
 	dw \1_SecondMapHeader
@@ -99,8 +99,8 @@ MACRO map_header
 	db \8
 ENDM
 
-MACRO map_header_2
 ; label, map, border block, connections
+MACRO map_header_2
 \1_SecondMapHeader::
 	db \3
 	db \2_HEIGHT, \2_WIDTH
@@ -153,6 +153,7 @@ elif !strcmp("\1", "east")
 endc
 ENDM
 
+; map id, height, width
 MACRO mapgroup
 GROUP_\1 EQU const_value
 	enum MAP_\1

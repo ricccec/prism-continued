@@ -535,6 +535,7 @@ SECTION "Second Map Headers", ROMX
 	map_header_2 MtEmberRoom1, MT_EMBER_ROOM_1, $19, 0
 	map_header_2 MtEmberRoom2, MT_EMBER_ROOM_2, $19, 0
 	map_header_2 MtEmber, MT_EMBER, $28, 0
+	map_header_2 MtEmberSmallRoom, MT_EMBER_SMALL_ROOM, $19, 0
 	map_header_2 SouthSoutherly, SOUTH_SOUTHERLY, $31, NORTH | SOUTH
 	connection north, SOUTHERLY_CITY, SoutherlyCity, 0, 5, 10, SOUTH_SOUTHERLY
 	connection south, TUNOD_WATERWAY, TunodWaterway, 0, 30, 10, SOUTH_SOUTHERLY

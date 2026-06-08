@@ -233,6 +233,7 @@ INCLUDE "maps/AcquaLabBasementPath.asm"
 INCLUDE "maps/MilosB2F.asm"
 INCLUDE "maps/LaurelForestGates.asm"
 INCLUDE "maps/SaxifrageIsland.asm"
+INCLUDE "maps/MtEmberSmallRoom.asm"
 
 SECTION "Map Scripts 8", ROMX
 INCLUDE "maps/Route67Gate.asm"

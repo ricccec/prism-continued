@@ -837,3 +837,7 @@ TunodWaterway_BlockData:
 	INCBIN "maps/blk/TunodWaterway.ablk.lz"
 Route87_BlockData:
 	INCBIN "maps/blk/Route87.ablk.lz"
+
+SECTION "Map block data 11", ROMX
+MtEmberSmallRoom_BlockData:
+	INCBIN "maps/blk/MtEmberSmallRoom.blk.lz"
