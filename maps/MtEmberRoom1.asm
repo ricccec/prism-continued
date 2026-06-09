@@ -37,6 +37,7 @@ MtEmberRoom1_Trainer_1:
 	line "is my fault!"
 	done
 
+; FIXME Remove this
 MtEmberRoom1NPC:
 	ctxt "Oh<...> hello!"
 
@@ -56,10 +57,11 @@ MtEmberRoom1NPC:
 MtEmberRoom1_MapEventHeader:: db 0, 0
 
 .Warps
-	db 3
+	db 4
 	warp_def $10, $c, 2, MT_EMBER_ENTRANCE
 	warp_def $11, $2, 1, MT_EMBER
 	warp_def $11, $3, 1, MT_EMBER
+	warp_def $2, $c, 1, MT_EMBER_SMALL_ROOM
 
 .CoordEvents
 	db 0
@@ -69,5 +71,5 @@ MtEmberRoom1_MapEventHeader:: db 0, 0
 
 .ObjectEvents
 	db 2
-	person_event SPRITE_MINER, 5, 11, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_TEXTFP, 0, MtEmberRoom1NPC, -1
+	; person_event SPRITE_MINER, 5, 11, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_TEXTFP, 0, MtEmberRoom1NPC, -1
 	person_event SPRITE_COOLTRAINER_M,  7,  5, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_GENERICTRAINER, 1, MtEmberRoom1_Trainer_1, -1

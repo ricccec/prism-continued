@@ -76,6 +76,7 @@ MACRO xy_trigger
 	dw \4 ; script
 ENDM
 
+; y, x, warp to, map
 MACRO warp_def
 	db \1 ; y
 	db \2 ; x
