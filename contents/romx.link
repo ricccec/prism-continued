@@ -496,9 +496,11 @@ ROMX $73
 
 ROMX $74
 	"Tilesets 11"
-	"Enemy Trainers"
 
 ROMX $75
 	"Songs 9"
 	"Map block data 1"
 	"Map Scripts small 1"
+
+ROMX $76
+	"Enemy Trainers"
