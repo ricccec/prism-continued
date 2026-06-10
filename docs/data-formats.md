@@ -108,6 +108,49 @@ TrainerName:
     db $ff
 ```
 
+### How constants map to data
+
+Trainer battles are started with the `loadtrainer` script command, which takes
+two arguments:
+
+```asm
+loadtrainer YOUNGSTER, YOUNGSTER_3
+```
+
+**Group constant** (`YOUNGSTER`, etc.) — defined in
+`constants/trainer_constants.asm` using the `trainerclass` macro:
+
+```asm
+trainerclass YOUNGSTER   ; → YOUNGSTER = <next enum value>
+                         ;   also resets the per-group ID counter to 1
+const YOUNGSTER_1
+const YOUNGSTER_2
+; ...
+```
+
+`trainerclass` wraps `enum` (assigns the next sequential integer) and resets
+`const_value` to 1 so that `YOUNGSTER_1 = 1`, `YOUNGSTER_2 = 2`, etc.
+
+**At runtime** (`trainers/read_party.asm: ReadTrainerParty`):
+
+1. The group byte is used as a **0-based index** into `TrainerGroups`
+   (`trainers/trainer_pointers.asm`) — a flat table of `dw` pointers, one per
+   group in the same order as the constants.
+2. The pointer gives the start of that group's raw data (e.g. `YoungsterGroup`).
+3. The trainer-ID byte is a **1-based count**: the engine scans forward through
+   the group data, skipping entries by looking for `$ff` party terminators,
+   until it has skipped (ID − 1) entries.
+
+**Constraints:**
+- Max **255 usable trainer groups** (group byte is 8-bit; 0 is reserved for
+  `TRAINER_NONE`).
+- Max **255 trainers per group** (ID byte is 8-bit, 0 unused).
+- `TrainerGroups`, `TrainerGroups` pointers, and all `XxxGroup` data **must
+  live in the same ROM bank** (currently bank $74, "Enemy Trainers") because
+  the lookup uses plain 16-bit pointers with no bank switch.
+- The order of `trainerclass` entries in `trainer_constants.asm` **must exactly
+  match** the order of `dw XxxGroup` entries in `trainer_pointers.asm`.
+
 ---
 
 ## Move Data (`battle/moves/moves.asm`)
