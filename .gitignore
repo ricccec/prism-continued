@@ -78,3 +78,4 @@ $RECYCLE.BIN/
 
 # Python virtual env
 **/.venv
+**/.claude-flow/
