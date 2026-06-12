@@ -57,3 +57,14 @@ MinerGroup:
 	db 82, TYRANITAR
 	db 83, HITMONCHAN
 	db -1
+
+	; ****** Sevii Island *****
+
+	; 7
+	db "Mac@"
+
+	db TRAINERTYPE_NORMAL
+
+	db 50, DRAPION
+	db 50, STEELIX
+	db -1

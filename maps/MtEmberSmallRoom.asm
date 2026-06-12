@@ -19,8 +19,11 @@ MtEmberSmallRoomNPC:
 	sif true, then
 		opentext
 		writetext .dynamite_fight
-		writetext .dynamite_leaves
-		closetext
+		loadtrainer MINER, 7
+		winlosstext .dynamite_lost_text, 0
+		startbattle
+		reloadmapafterbattle
+		showtext .dynamite_leaves
 		applymovement 2, .dynamite_walks_away
 		playsound SFX_ENTER_DOOR
 		disappear 2		; Set EVENT_EMBER_DYNAMITE_GUY_LEFT
@@ -56,14 +59,15 @@ MtEmberSmallRoomNPC:
 	; Countdown
 	opentext
 	writetext .r_u_ready
-	pause 64
+	pause 32
 	writetext .three
-	pause 64
+	pause 24
 	writetext .two
-	pause 64
+	pause 24
 	writetext .one
 	pause 64
 	closetext
+	; Ka-Boom!!!
 	playsound SFX_EGG_BOMB
 	earthquake 24
 	playsound SFX_EGG_BOMB
@@ -153,6 +157,10 @@ MtEmberSmallRoomNPC:
 	para "How about a good"
 	line "<PKMN> battle?"
 	sdone
+
+.dynamite_lost_text
+	ctxt "Woah!"
+	done
 
 .dynamite_leaves
 	ctxt "You're a good"
