@@ -130,7 +130,7 @@ EngineFlags:
 	engine_flag ENGINE_MARSHBADGE
 	engine_flag ENGINE_BLAZEBADGE
 	engine_flag ENGINE_WILDS_DISABLED
-	engine_flag ENGINE_UNUSED_4
+	engine_flag ENGINE_UNUSED_4 ; 30 
 	engine_flag ENGINE_FLYPOINT_START
 	engine_flag ENGINE_FLYPOINT_CAPER_RIDGE
 	engine_flag ENGINE_FLYPOINT_OXALIS_CITY

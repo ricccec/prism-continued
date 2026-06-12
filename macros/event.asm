@@ -853,6 +853,7 @@ ENDC
 	ENDM
 
 	enum spriteface_command
+; Person (player is #1), direction
 MACRO spriteface
 	db spriteface_command
 	db \1 ; person

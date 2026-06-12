@@ -1343,8 +1343,8 @@
 	const skip
 	; ***** PRISM CONTINUED *****
 	const EVENT_EMBER_DYNAMITE_GUY
-	const skip
-	const skip
+	const EVENT_KINDLE_ROAD_OPEN
+	const EVENT_EMBER_DYNAMITE_GUY_LEFT
 	const skip
 	const skip
 	const skip

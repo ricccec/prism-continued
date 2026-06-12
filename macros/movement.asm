@@ -1,5 +1,7 @@
 	enum_start
 
+; ***** Turn head movement *****
+
 	enum movement_turn_head_down
 MACRO turn_head_down
 	db movement_turn_head_down ; $00
@@ -19,6 +21,8 @@ MACRO turn_head_left
 MACRO turn_head_right
 	db movement_turn_head_right ; $03
 	ENDM
+
+; ***** Turn step movement *****
 
 	enum movement_turn_step_down
 MACRO turn_step_down
@@ -40,6 +44,8 @@ MACRO turn_step_right
 	db movement_turn_step_right ; $07
 	ENDM
 
+; ***** Slow step movement *****
+
 	enum movement_slow_step_down
 MACRO slow_step_down
 	db movement_slow_step_down ; $08
@@ -59,6 +65,8 @@ MACRO slow_step_left
 MACRO slow_step_right
 	db movement_slow_step_right ; $0b
 	ENDM
+
+; ***** Step movement *****
 
 	enum movement_step_down
 MACRO step_down
@@ -80,6 +88,8 @@ MACRO step_right
 	db movement_step_right ; $0f
 	ENDM
 
+; ***** Big step movement *****
+
 	enum movement_big_step_down
 MACRO big_step_down
 	db movement_big_step_down ; $10
@@ -99,6 +109,9 @@ MACRO big_step_left
 MACRO big_step_right
 	db movement_big_step_right ; $13
 	ENDM
+
+; ***** Slow slide movement *****
+; Slow sliding
 
 	enum movement_slow_slide_step_down
 MACRO slow_slide_step_down
@@ -120,6 +133,9 @@ MACRO slow_slide_step_right
 	db movement_slow_slide_step_right ; $17
 	ENDM
 
+; ***** Slide movement *****
+; Slide w/o walking
+
 	enum movement_slide_step_down
 MACRO slide_step_down
 	db movement_slide_step_down ; $18
@@ -139,6 +155,8 @@ MACRO slide_step_left
 MACRO slide_step_right
 	db movement_slide_step_right ; $1b
 	ENDM
+
+; ***** Fast slide movement *****
 
 	enum movement_fast_slide_step_down
 MACRO fast_slide_step_down
@@ -160,6 +178,8 @@ MACRO fast_slide_step_right
 	db movement_fast_slide_step_right ; $1f
 	ENDM
 
+; ***** Trun away movement *****
+
 	enum movement_turn_away_down
 MACRO turn_away_down
 	db movement_turn_away_down ; $20
@@ -179,6 +199,8 @@ MACRO turn_away_left
 MACRO turn_away_right
 	db movement_turn_away_right ; $23
 	ENDM
+
+; ***** Turn in movement *****
 
 	enum movement_turn_in_down
 MACRO turn_in_down
@@ -200,6 +222,8 @@ MACRO turn_in_right
 	db movement_turn_in_right ; $27
 	ENDM
 
+; ***** Turn waterfall movement *****
+
 	enum movement_turn_waterfall_down
 MACRO turn_waterfall_down
 	db movement_turn_waterfall_down ; $28
@@ -219,6 +243,9 @@ MACRO turn_waterfall_left
 MACRO turn_waterfall_right
 	db movement_turn_waterfall_right ; $2b
 	ENDM
+
+; ***** Slow jump movement *****
+; Slow jump 2 tiles in a given direction
 
 	enum movement_slow_jump_step_down
 MACRO slow_jump_step_down
@@ -240,6 +267,9 @@ MACRO slow_jump_step_right
 	db movement_slow_jump_step_right ; $2f
 	ENDM
 
+; ***** Jump movement *****
+; Jump 2 tiles in a given direction
+
 	enum movement_jump_step_down
 MACRO jump_step_down
 	db movement_jump_step_down ; $30
@@ -259,6 +289,9 @@ MACRO jump_step_left
 MACRO jump_step_right
 	db movement_jump_step_right ; $33
 	ENDM
+
+; ***** Fast jump movement *****
+; Fast jump 2 tiles in a given direction
 
 	enum movement_fast_jump_step_down
 MACRO fast_jump_step_down
@@ -441,16 +474,22 @@ MACRO rock_smash
 	db \1
 	ENDM
 
+; ***** Return dig movement *****
+
 	enum movement_return_dig
 MACRO return_dig
 	db movement_return_dig ; $58
 	db \1
 	ENDM
 
+; ***** Skyfall movement *****
+
 	enum movement_skyfall_top
 MACRO skyfall_top
 	db movement_skyfall_top ; $59
 	ENDM
+
+; ***** Run movement *****
 
 	enum movement_run_step_down
 MACRO run_step_down
@@ -471,6 +510,8 @@ MACRO run_step_left
 MACRO run_step_right
 	db movement_run_step_right ; $5d
 	ENDM
+
+; ***** Field movement *****
 
 	enum movement_field_move
 MACRO field_move
