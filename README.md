@@ -1,6 +1,6 @@
 # Pokémon Prism
 
-Pokémon Prism is a mod of the Generation II game Pokémon Crystal. It is based on the [pokecrystal](https://github.com/pret/pokecrystal) disassembly. It was originally developed by [RainbowDevs][rainbow].
+Pokémon Prism is a mod of the Generation II game Pokémon Crystal. It is based on the [pokecrystal](https://github.com/pret/pokecrystal) disassembly. It was originally developed by [RainbowDevs](https://rainbowdevs.com).
 
 **This fork is my personal attempt to finish Pokémon Prism.** The last official release was v0.95 build 254. Development on the original stalled; this repo picks up from that point and continues the game toward completion.
 
@@ -28,7 +28,7 @@ Python devtools for working with this codebase live in a separate repo: [**pokep
 pipx install -e <path-to-clone>
 ```
 
-To set up the repository, see [**INSTALL.md**](INSTALL.md).
+To set up the repository and build the ROM, see [**build.md**](docs/build.md). If something's missing, take a look at [**INSTALL.md**](INSTALL.md), which is the original installation guide.
 
 ## Building on macOS (tested on Apple Silicon, macOS 14+)
 
