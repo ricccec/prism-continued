@@ -1,4 +1,4 @@
-# Chapter 8 — The Battle Engine
+# Chapter 9 — The Battle Engine
 
 *Every encounter is a small virtual machine that boots, runs its turn loop, and shuts down — and the ROM holds the bytecode for roughly two hundred distinct moves.*
 
@@ -366,4 +366,4 @@ After all rewards are distributed, `ExitBattle` in `battle/engine/finish/exit.as
 
 ## Where to Next
 
-The battle engine relies on two support layers that fill in the background: the text boxes and menus the engine surfaces to the player (move-selection screens, HP bars, HUD slides), the sound effects triggered by each animation command, and the graphical tile system that displays Pokémon sprites in battle. Chapter 9 covers text rendering, menu architecture, the audio driver, and the graphics pipeline that ties all of it together.
+The battle engine relies on two support layers that fill in the background: the text boxes and menus the engine surfaces to the player (move-selection screens, HP bars, HUD slides), the sound effects triggered by each animation command, and the graphical tile system that displays Pokémon sprites in battle. Chapter 10 covers text rendering, menu architecture, the audio driver, and the graphics pipeline that ties all of it together.

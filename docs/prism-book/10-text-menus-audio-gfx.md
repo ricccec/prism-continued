@@ -1,4 +1,4 @@
-# Chapter 9 — Text, Menus, Audio & Graphics
+# Chapter 10 — Text, Menus, Audio & Graphics
 
 *The cartridge is a machine for generating pixels and sound; everything else is scaffolding to get you there.*
 
@@ -312,7 +312,7 @@ INCLUDE "gfx/font.asm"
 ; ... etc.
 ```
 
-Each sub-include binds a label to an `INCBIN` of the `.2bpp.lz` or `.1bpp.lz` file. For Pokémon front/back sprites the `pokepic` tool (Chapter 10) handles the PNG→2bpp conversion and applies a sprite-specific palette table before compression. The Chapter 10 tooling section covers the full build pipeline in detail.
+Each sub-include binds a label to an `INCBIN` of the `.2bpp.lz` or `.1bpp.lz` file. For Pokémon front/back sprites the `pokepic` tool (Chapter 11) handles the PNG→2bpp conversion and applies a sprite-specific palette table before compression. The Chapter 11 tooling section covers the full build pipeline in detail.
 
 ### 9.4.2 Uploading Tiles to VRAM
 
@@ -396,4 +396,4 @@ The tile-index sequences themselves come from the `gfx/ow_sprites/` 2bpp sheets.
 
 ## Where to Next
 
-Chapter 10 — *Tooling & Debugging* — lifts the lid on everything that runs *before* the assembler: `rgbgfx` and `pokepic` converting PNGs to 2bpp, the Python `prism-dev`/`prism-sym` devtools for inspecting WRAM live in an emulator, the `DEBUG_MODE` build flag and the `/patch/` bspcomp framework, and how `make nodebug` orchestrates the whole chain from source tree to flashable ROM.
+Chapter 11 — *Tooling & Debugging* — lifts the lid on everything that runs *before* the assembler: `rgbgfx` and `pokepic` converting PNGs to 2bpp, the Python `prism-dev`/`prism-sym` devtools for inspecting WRAM live in an emulator, the `DEBUG_MODE` build flag and the `/patch/` bspcomp framework, and how `make nodebug` orchestrates the whole chain from source tree to flashable ROM.

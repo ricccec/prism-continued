@@ -111,7 +111,8 @@ MtEmberSmallRoomNPC:
 	sdone
 
 .intro_text
-	ctxt "Oh<...> hello!"
+	ctxt "Hey kid, remember"
+	line "me?"
 
 	para "I'm trying to get"
 	line "to Kindle Road."

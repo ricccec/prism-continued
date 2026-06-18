@@ -95,7 +95,7 @@ The command you'll run most:
 make nodebug RGBDS="/tmp/rgbds-0.7.0/"
 ```
 
-That produces three files: `pokeprism_nodebug.gbc` (the playable ROM), `pokeprism_nodebug.sym` (a symbol table for emulator debuggers), and `pokeprism_nodebug.map` (the full linker map). Chapter 10 covers the build system in depth; here it's enough to know the invocation.
+That produces three files: `pokeprism_nodebug.gbc` (the playable ROM), `pokeprism_nodebug.sym` (a symbol table for emulator debuggers), and `pokeprism_nodebug.map` (the full linker map). Chapter 11 covers the build system in depth; here it's enough to know the invocation.
 
 ---
 

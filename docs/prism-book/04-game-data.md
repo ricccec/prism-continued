@@ -195,7 +195,7 @@ Notice that type and damage category are packed into one byte using a bitshift: 
 
 ### Effect dispatch
 
-The `EFFECT_*` constant in each move record is an index into a jump table. Effect implementations live in `battle/moves/move_effects.asm`; the jump table that maps effect IDs to handler addresses is in `battle/moves/move_effects_pointers.asm`. Chapter 8 covers how the battle engine dispatches through that table and what the effect handler protocol looks like. From the data perspective, all that matters here is that the move record's effect byte is an 8-bit index — which caps the move effect count at 256.
+The `EFFECT_*` constant in each move record is an index into a jump table. Effect implementations live in `battle/moves/move_effects.asm`; the jump table that maps effect IDs to handler addresses is in `battle/moves/move_effects_pointers.asm`. Chapter 9 covers how the battle engine dispatches through that table and what the effect handler protocol looks like. From the data perspective, all that matters here is that the move record's effect byte is an 8-bit index — which caps the move effect count at 256.
 
 ---
 

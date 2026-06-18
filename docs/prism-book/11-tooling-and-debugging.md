@@ -1,4 +1,4 @@
-# Chapter 10 — Tooling & Debugging
+# Chapter 11 — Tooling & Debugging
 
 *The ROM is the output. The build system, the linker map, and the debug menus are the instruments you use to understand it.*
 

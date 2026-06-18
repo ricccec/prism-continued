@@ -16,11 +16,11 @@ The gold standard for tone is [`../map-rendering.md`](../map-rendering.md) and [
 
 ## How to read it
 
-The ten chapters fall into three movements:
+The eleven chapters fall into three movements:
 
 - **Foundations (1–4)** — the artifact, its idioms, its memory, and its data. Read these first; every later chapter assumes them.
-- **The Overworld (5–7)** — the heart of the book. How a map becomes a grid of pixels, how it's coloured and loaded, and how scripts, warps, connections, NPCs, and encounters turn it into a living place.
-- **Everything Else (8–10)** — the battle engine, the presentation layer (text, menus, audio, graphics), and the tooling you build and debug with.
+- **The Overworld (5–8)** — the heart of the book. How a map becomes a grid of pixels, how it's coloured and loaded, how scripts, warps, connections, NPCs, and encounters turn it into a living place, and the sixty-hertz loop that sets it all in motion.
+- **Everything Else (9–11)** — the battle engine, the presentation layer (text, menus, audio, graphics), and the tooling you build and debug with.
 
 You can read straight through, or jump to a chapter and follow its cross-references. A recurring theme runs the whole way: **data tables + pointer indirection + small VMs + far-call trampolines.** Once that pattern clicks, almost any file in the repo becomes legible.
 
@@ -44,16 +44,17 @@ You can read straight through, or jump to a chapter and follow its cross-referen
 | 5 | [Anatomy of a Map](05-anatomy-of-a-map.md) | What a map *is* as data: the two-level header lookup, the block grid, and the tileset's three tables (metatiles, attributes, collision) that turn one byte into a 32×32-pixel block. | 503 |
 | 6 | [Colour, Light & Loading](06-colour-and-loading.md) | How permission + time-of-day choose eight palettes, the dark-cave/Flash case and runtime fades, and the map-setup VM that assembles a live map step by ordered step. | 590 |
 | 7 | [The Scripting VM & Events](07-scripting-and-events.md) | The climax: triggers and callbacks, the script bytecode VM, warps, seamless map connections and the scrolling camera, NPCs, runtime encounters, landmark signs — and a frame in the life of the overworld loop. | 827 |
+| 8 | [The Overworld in Motion](08-overworld-in-motion.md) | The sixty-hertz loop that drives it all: smooth scrolling by streaming tiles into a screen-sized VRAM torus, the step state machines for player and NPCs, trigger detection underfoot, trainer line-of-sight, A-press interaction, hidden items, field moves, and the Start menu. | 737 |
 
 ### Part III — Everything Else
 
 | # | Chapter | What it covers | Lines |
 |---|---------|----------------|------:|
-| 8 | [The Battle Engine](08-battle-engine.md) | Battle entry, the subsystem layout, the turn loop, move execution via effect-command bytecode, damage and type matchups, the animation interpreter, trainer AI, and battle end. | 369 |
-| 9 | [Text, Menus, Audio & Graphics](09-text-menus-audio-gfx.md) | The presentation layer: the charmap and variable-width font, the menu driver and major screens, the audio driver and DED-compressed cries, and the PNG→2bpp→VRAM graphics pipeline. | 399 |
-| 10 | [Tooling & Debugging](10-tooling-and-debugging.md) | The build (`make nodebug`), bank budgeting, the `utils/` C tools, the Python devtools, `DEBUG_MODE` and the in-game debug menus, the `/patch/` framework, and a closing epilogue. | 243 |
+| 9 | [The Battle Engine](09-battle-engine.md) | Battle entry, the subsystem layout, the turn loop, move execution via effect-command bytecode, damage and type matchups, the animation interpreter, trainer AI, and battle end. | 369 |
+| 10 | [Text, Menus, Audio & Graphics](10-text-menus-audio-gfx.md) | The presentation layer: the charmap and variable-width font, the menu driver and major screens, the audio driver and DED-compressed cries, and the PNG→2bpp→VRAM graphics pipeline. | 399 |
+| 11 | [Tooling & Debugging](11-tooling-and-debugging.md) | The build (`make nodebug`), bank budgeting, the `utils/` C tools, the Python devtools, `DEBUG_MODE` and the in-game debug menus, the `/patch/` framework, and a closing epilogue. | 243 |
 
-*Roughly 4,200 lines across ten chapters.*
+*Roughly 4,900 lines across eleven chapters.*
 
 ---
 
