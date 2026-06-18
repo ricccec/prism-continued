@@ -1,8 +1,32 @@
 # Pokémon Prism
 
-Pokémon Prism is a mod of the Generation II game Pokémon Crystal. It is based on the [pokecrystal](https://github.com/pret/pokecrystal) disassembly. It is currently developed by [RainbowDevs][rainbow], a collective of passionate Pokémon Game Boy developers.
+Pokémon Prism is a mod of the Generation II game Pokémon Crystal. It is based on the [pokecrystal](https://github.com/pret/pokecrystal) disassembly. It was originally developed by [RainbowDevs][rainbow].
 
-Updates are issued through the developer-run Pokémon Prism [subreddit](https://www.reddit.com/r/PokemonPrism/), [Twitter][rainbow] and community-run [Discord server](https://discord.com/invite/PewQHvy).
+**This fork is my personal attempt to finish Pokémon Prism.** The last official release was v0.95 build 254. Development on the original stalled; this repo picks up from that point and continues the game toward completion.
+
+## Documentation
+
+The `docs/` directory contains in-depth technical documentation built alongside development:
+
+| File | Contents |
+|------|----------|
+| [`docs/overview.md`](docs/overview.md) | Project structure, ROM layout, subsystem map |
+| [`docs/build.md`](docs/build.md) | Build instructions, tool versions, build errors |
+| [`docs/codebase-map.md`](docs/codebase-map.md) | Directory map — every subsystem and key file |
+| [`docs/maps-and-events.md`](docs/maps-and-events.md) | Map files, NPCs, warps, event scripts |
+| [`docs/data-formats.md`](docs/data-formats.md) | Pokémon stats, trainer parties, moves, items, wild tables |
+| [`docs/memory-layout.md`](docs/memory-layout.md) | WRAM variables, GBC address space |
+| [`docs/macros-and-constants.md`](docs/macros-and-constants.md) | Enum system, constant values, `farcall`/`predef` |
+| [`docs/debug-mode.md`](docs/debug-mode.md) | In-game debug menus, `DEBUG_MODE` build flag |
+| [`docs/code-conventions.md`](docs/code-conventions.md) | Coding conventions |
+
+## Developer Tools
+
+Python devtools for working with this codebase live in a separate repo: [**pokeprism-devtools**](https://github.com/ricccec/pokeprism-devtools). Install with:
+
+```bash
+pipx install -e <path-to-clone>
+```
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
@@ -84,5 +108,3 @@ alias prism-errors='make nodebug 2>&1 | grep -A1 "^error:"'
 
 RGBDS prints each error across two lines — the file/line trace, then the indented reason —
 so `-A1` is what makes the reason visible.
-
-[rainbow]: https://twitter.com/rainbowdevs
