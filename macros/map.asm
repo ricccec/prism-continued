@@ -111,13 +111,13 @@ MACRO map_header_2
 	db \4
 ENDM
 
-MACRO connection
 ;\2: map id
 ;\3: map label (eventually will be rolled into map id)
 ;\4: x/y
 ;\5: offset?
 ;\6: strip length
 ;\7: this map id
+MACRO connection
 	map \2
 if !strcmp("\1", "north")
 	dw wDecompressScratch + \2_WIDTH * (\2_HEIGHT - 3) + \5
