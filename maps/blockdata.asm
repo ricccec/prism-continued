@@ -668,8 +668,6 @@ HauntedMansionBasement_BlockData:
 	INCBIN "maps/blk/HauntedMansionBasement.ablk.lz"
 MersonCaveB2F_BlockData:
 	INCBIN "maps/blk/MersonCaveB2F.ablk.lz"
-MersonCaveB3F_BlockData:
-	INCBIN "maps/blk/MersonCaveB3F.ablk.lz"
 MtBoulderB1F_BlockData:
 	INCBIN "maps/blk/MtBoulderB1F.ablk.lz"
 CastroForest_BlockData:
@@ -684,18 +682,10 @@ RijonUndergroundVertical_BlockData:
 	INCBIN "maps/blk/RijonUndergroundVertical.ablk.lz"
 RijonHiddenBasement_BlockData:
 	INCBIN "maps/blk/RijonHiddenBasement.ablk.lz"
-SenecaCavernsF1_BlockData:
-	INCBIN "maps/blk/SenecaCavernsF1.ablk.lz"
-SenecaCavernsB1F_BlockData:
-	INCBIN "maps/blk/SenecaCavernsB1F.ablk.lz"
-SenecaCavernsB2F_BlockData:
-	INCBIN "maps/blk/SenecaCavernsB2F.ablk.lz"
 HauntedForestGate_BlockData:
 	INCBIN "maps/blk/HauntedForestGate.ablk.lz"
 HauntedForest_BlockData:
 	INCBIN "maps/blk/HauntedForest.ablk.lz"
-HauntedMansion_BlockData:
-	INCBIN "maps/blk/HauntedMansion.ablk.lz"
 DreamSequence_BlockData:
 	INCBIN "maps/blk/DreamSequence.ablk.lz"
 IlexForest_BlockData:
@@ -706,6 +696,8 @@ Route34Gate_BlockData:
 	INCBIN "maps/blk/Route34Gate.ablk.lz"
 GoldenrodCape_BlockData:
 	INCBIN "maps/blk/GoldenrodCape.ablk.lz"
+SenecaCavernsB1F_BlockData:
+	INCBIN "maps/blk/SenecaCavernsB1F.ablk.lz"
 
 SECTION "Map block data 7", ROMX
 SoutherlyCity_BlockData:
@@ -845,3 +837,13 @@ MtEmberWest_BlockData:
 	INCBIN "maps/blk/MtEmberWest.blk.lz"
 MtEmberSouth_BlockData:
 	INCBIN "maps/blk/MtEmberSouth.blk.lz"
+
+SECTION "Map block data 12", ROMX
+MersonCaveB3F_BlockData:
+	INCBIN "maps/blk/MersonCaveB3F.ablk.lz"
+HauntedMansion_BlockData:
+	INCBIN "maps/blk/HauntedMansion.ablk.lz"
+SenecaCavernsB2F_BlockData:
+	INCBIN "maps/blk/SenecaCavernsB2F.ablk.lz"
+SenecaCavernsF1_BlockData:
+	INCBIN "maps/blk/SenecaCavernsF1.ablk.lz"

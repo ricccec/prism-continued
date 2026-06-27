@@ -167,6 +167,7 @@ ROMX $25
 	"Map Events"
 	"Text 1"
 	"Standard Text"
+	"Map block data 12"
 
 ROMX $26
 	"Code 18"
