@@ -443,6 +443,10 @@ INCLUDE "maps/EspoForest.asm"
 INCLUDE "maps/MagikarpCavernsMain.asm"
 INCLUDE "maps/BattleArcadeLobby.asm"
 
+; ***** Prism continued *****
+SECTION "Map Scripts 17", ROMX
+INCLUDE "maps/MtEmberWest.asm"
+
 SECTION "Map Scripts small 1", ROMX
 INCLUDE "maps/RuinsF3.asm"
 INCLUDE "maps/HeathGymHouse.asm"

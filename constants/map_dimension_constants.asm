@@ -587,6 +587,7 @@
 	mapgroup MT_EMBER_ROOM_2, 7, 8
 	mapgroup MT_EMBER, 25, 25
 	mapgroup MT_EMBER_SMALL_ROOM, 9, 10
+	mapgroup MT_EMBER_WEST, 40, 13
 
 	newgroup ; 89
 	mapgroup ROUTE_87, 30, 10

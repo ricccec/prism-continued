@@ -841,3 +841,5 @@ Route87_BlockData:
 SECTION "Map block data 11", ROMX
 MtEmberSmallRoom_BlockData:
 	INCBIN "maps/blk/MtEmberSmallRoom.blk.lz"
+MtEmberWest_BlockData:
+	INCBIN "maps/blk/MtEmberWest.blk.lz"

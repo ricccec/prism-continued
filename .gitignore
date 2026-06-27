@@ -23,6 +23,8 @@ __pycache__/
 
 # devtools — generated artifacts (.devtools/ is gitignored except presets/)
 .devtools/*
+tilesets/*.polishedmap
+tilesets/*.scratch
 
 # binaries
 *.exe
