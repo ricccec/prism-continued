@@ -173,6 +173,21 @@ Palettes are indexed sequentially (0, 1, 2, …). The file has 5 sections in ord
 
 Converting 5-bit to 8-bit: `rgb8 = (v << 3) | (v >> 2)`.
 
+### Layer 3: map-group roof palette (`tilesets/roof.pal`)
+
+After filling all 8 BG palettes via the layers above, `LoadMapPals` applies one final override for any map that is not a special-tileset map. It uses the current **map group number** (`wMapGroup`) as an index into `RoofPals` (`tilesets/roof.pal`), then overwrites BG palette 6 colors 1–2 (`wOriginalBGPals + 6 palettes + 2`, 4 bytes):
+
+```
+offset = wMapGroup * 8          # each group = 4 RGB entries = 8 bytes
+if time_of_day >= NITE:
+    offset += 4                 # second pair of colors
+copy 4 bytes → BG palette 6, colors 1–2
+```
+
+`roof.pal` is a plain-text RGBASM file (one `RGB r, g, b` per line). Each map group occupies exactly **4 consecutive `RGB` entries** (8 bytes): the first two are morning/day colors, the last two are night colors.
+
+**Key consequence:** all maps in the same map group share one roof palette entry. Moving a map to a different group silently changes the two roof colors it inherits, even if nothing else in the map header changes. When re-grouping a map, check and update the corresponding entry in `tilesets/roof.pal`.
+
 ### Special tileset overrides (`LoadSpecialMapPalette`)
 
 Some tileset IDs bypass the permission/bg.pal system entirely:

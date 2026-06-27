@@ -159,6 +159,38 @@ lives in banks $20–$35, scripts in $36–$44.
 
 ---
 
+## Map Connections
+
+Connections define the scrolling seams between adjacent outdoor maps. They are declared in `maps/second_map_headers.asm` immediately after the `map_header_2` for the map:
+
+```asm
+map_header_2 CaperRidge, CAPER_RIDGE, 53, NORTH | EAST
+connection north, ROUTE_70,       Route70,      5, 0, 10, CAPER_RIDGE
+connection east,  ROUTE_71_WEST,  Route71West,  0, 0,  9, CAPER_RIDGE
+```
+
+### `connection` fields
+
+```
+connection <direction>, <neighbor_id>, <neighbor_label>, <edge_offset>, <neighbor_offset>, <strip_length>, <this_map_id>
+```
+
+| Field | Meaning |
+|-------|---------|
+| `direction` | `north`, `south`, `east`, or `west` |
+| `neighbor_id` | Neighbor's map-group constant — provides `GROUP_*`, `MAP_*`, `*_WIDTH`, `*_HEIGHT` |
+| `neighbor_label` | Unused (will eventually merge with `neighbor_id`) |
+| `edge_offset` | Column (N/S) or row (E/W) along *this* map's edge where the seam starts |
+| `neighbor_offset` | Column (N/S) or row (E/W) along the neighbor's opposite edge where the strip begins |
+| `strip_length` | How many tiles wide (N/S) or tall (E/W) the visible seam window is |
+| `this_map_id` | This map's own constant — provides `*_WIDTH`, `*_HEIGHT` for camera offset calculation |
+
+The connection bitmask in `map_header_2`'s last argument (`NORTH | EAST`) must include a bit for every `connection` you declare; valid bits are `NORTH`, `SOUTH`, `EAST`, `WEST`.
+
+`(edge_offset - neighbor_offset) * -2` is encoded as the camera-alignment byte, allowing maps of different widths to scroll smoothly into each other when their edges don't share the same x/y coordinate.
+
+---
+
 ## Adding a New Map
 
 1. Create `maps/NewMapName.asm` following the structure above.

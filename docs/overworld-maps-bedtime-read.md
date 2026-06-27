@@ -316,6 +316,8 @@ Each row is three bytes — one for BG palettes, one for OBJ palettes — and th
 
 And for a handful of special maps — the Espo Forest, Olcan Isle, the Trainer House Battle Room, the Tunod area — none of the above applies. These maps declare `TILESET_ESPO_FOREST` or similar, and `LoadSpecialMapPalette` detects them and loads a bespoke `.pal` file instead. Those files are the same format as `bg.pal` but tuned for the specific aesthetic of that area. The system is escapable when you need it to be.
 
+There is one more palette layer that sits below all of this and is easy to miss: `LoadMapPals` finishes by reading `tilesets/roof.pal` at offset `wMapGroup * 8` and overwriting BG palette 6, colors 1–2. Each map group has exactly four `RGB` entries in that file — two for day, two for night. Because the lookup key is the **map group number**, all maps in the same group share this roof color. Moving a map to a different group changes that color, even if its `map_header` palette field is unchanged. See [`map-rendering.md`](map-rendering.md) §4 for the exact byte layout.
+
 ---
 
 ## Part Six — The setup sequence: loading a map is a program
@@ -579,22 +581,33 @@ So `wOverworldMap` at any given moment is a composite: the current map's blocks 
 The `connection` macro in `macros/map.asm` is where this alignment is specified:
 
 ```asm
-MACRO connection
-; connection north, ROUTE_70, Route70, 5, 0, 10, CAPER_RIDGE
-; (direction, neighbour_map_id, neighbour_label, y_or_x, offset, strip_length, this_map)
-
-; For north:
-    dw wDecompressScratch + \2_WIDTH * (\2_HEIGHT - 3) + \5
-    ; ^ start 3 rows from the bottom of the neighbour's map
-    dw wOverworldMap + \4 + 3
-    ; ^ land at column \4, 3 rows from top of this map's buffer
-    db \6       ; strip length
-    db \2_WIDTH ; neighbour's width (for row stride)
-    ; ...
-ENDM
+; connection <direction>, <neighbor_id>, <neighbor_label>, <edge_offset>, <neighbor_offset>, <strip_length>, <this_map_id>
+connection north, ROUTE_70, Route70, 5, 0, 10, CAPER_RIDGE
 ```
 
-The numbers in each `connection` line tell you exactly where the two maps stitch together. The `\5` offset parameter handles cases where the maps don't share the same horizontal alignment — a common need when routes of different widths connect to a city.
+| Argument | Meaning |
+|----------|---------|
+| `direction` | `north`, `south`, `east`, or `west` |
+| `neighbor_id` | Neighbor's map-group constant; provides `GROUP_*`, `MAP_*`, `*_WIDTH`, `*_HEIGHT` |
+| `neighbor_label` | Unused (will eventually merge with `neighbor_id`) |
+| `edge_offset` | Column (N/S) or row (E/W) along *this* map's edge where the seam starts |
+| `neighbor_offset` | Column (N/S) or row (E/W) along the neighbor's opposite edge where the strip begins |
+| `strip_length` | How many tiles wide/tall the visible seam window is |
+| `this_map_id` | This map's own constant — provides `*_WIDTH`, `*_HEIGHT` |
+
+For the north case the macro emits:
+
+```asm
+    dw wDecompressScratch + \2_WIDTH * (\2_HEIGHT - 3) + \5
+    ; ^ bottom 3 rows of the neighbor, slid by neighbor_offset
+    dw wOverworldMap + \4 + 3
+    ; ^ target column in this map's padded buffer (+3 for border)
+    db \6        ; strip length
+    db \2_WIDTH  ; neighbor's width (row stride)
+    ; ... camera-alignment byte: (edge_offset - neighbor_offset) * -2
+```
+
+`(edge_offset - neighbor_offset) * -2` is the camera-alignment byte. When the two maps don't share the same x/y origin, this signed offset shifts the camera on transition so motion stays smooth.
 
 When you actually cross the boundary, `EnterMapConnection` in `engine/warp_connection.asm` updates `wMapGroup` and `wMapNumber` to the neighbour's values and adjusts the overworld anchor pointer so the camera now treats the neighbour as the "current" map. The `MapSetupScript_Connection` sequence runs, refreshing the metadata but not the block data (because the blocks are already in `wOverworldMap`).
 
