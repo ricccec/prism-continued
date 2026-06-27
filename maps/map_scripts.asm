@@ -446,6 +446,7 @@ INCLUDE "maps/BattleArcadeLobby.asm"
 ; ***** Prism continued *****
 SECTION "Map Scripts 17", ROMX
 INCLUDE "maps/MtEmberWest.asm"
+INCLUDE "maps/MtEmberSouth.asm"
 
 SECTION "Map Scripts small 1", ROMX
 INCLUDE "maps/RuinsF3.asm"

@@ -843,3 +843,5 @@ MtEmberSmallRoom_BlockData:
 	INCBIN "maps/blk/MtEmberSmallRoom.blk.lz"
 MtEmberWest_BlockData:
 	INCBIN "maps/blk/MtEmberWest.blk.lz"
+MtEmberSouth_BlockData:
+	INCBIN "maps/blk/MtEmberSouth.blk.lz"

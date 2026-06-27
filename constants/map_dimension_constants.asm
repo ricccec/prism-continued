@@ -586,8 +586,6 @@
 	mapgroup MT_EMBER_ROOM_1, 10, 10
 	mapgroup MT_EMBER_ROOM_2, 7, 8
 	mapgroup MT_EMBER, 25, 25
-	mapgroup MT_EMBER_SMALL_ROOM, 9, 10
-	mapgroup MT_EMBER_WEST, 40, 13
 
 	newgroup ; 89
 	mapgroup ROUTE_87, 30, 10
@@ -635,6 +633,9 @@
 	mapgroup MYSTERY_ZONE_AIRPORT, 7, 9
 
 	newgroup ; 95
+	mapgroup MT_EMBER_SMALL_ROOM, 9, 10
+	mapgroup MT_EMBER_WEST, 40, 13
+	mapgroup MT_EMBER_SOUTH, 10, 30
 	mapgroup SEVII_ISLAND_1, 60, 21
 	mapgroup SEVII_ISLAND_2, 20, 20
 	mapgroup SEVII_ISLAND_3, 20, 20
