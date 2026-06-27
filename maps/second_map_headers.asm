@@ -543,10 +543,10 @@ SECTION "Second Map Headers", ROMX
 	map_header_2 MtEmberSmallRoom, MT_EMBER_SMALL_ROOM, $19, 0
 
 	map_header_2 MtEmberWest, MT_EMBER_WEST, $28, SOUTH
-	connection south, MT_EMBER_SOUTH, MrEmberSouth, 0, 3, 13, MT_EMBER_WEST
+	connection south, MT_EMBER_SOUTH, MrEmberSouth, 0, 0, 13, MT_EMBER_WEST
 	
 	map_header_2 MtEmberSouth, MT_EMBER_SOUTH, $43, NORTH
-	connection north, MT_EMBER_WEST, MtEmberWest, 3, 0, 13, MT_EMBER_SOUTH
+	connection north, MT_EMBER_WEST, MtEmberWest, 0, 0, 13, MT_EMBER_SOUTH
 	; ***** Prism continued end *****
 
 	map_header_2 TunodWaterway, TUNOD_WATERWAY, $31, NORTH | SOUTH
