@@ -653,10 +653,10 @@ Setting the flag atomically with the pickup is what stops a found item from reap
 
 ## 8.11 Field Moves
 
-The HMs reach out of the bag and change the world. They all live in `engine/field_moves.asm` and they all share one shape: clear a scratch buffer, run a little jump-table state machine, gate on a badge, check the terrain in front of you, and — if everything passes — queue a script that performs the actual transformation. Cut is the clearest example:
+The HMs reach out of the bag and change the world. They all live in `engine/overworld/field_moves.asm` and they all share one shape: clear a scratch buffer, run a little jump-table state machine, gate on a badge, check the terrain in front of you, and — if everything passes — queue a script that performs the actual transformation. Cut is the clearest example:
 
 ```asm
-; engine/field_moves.asm
+; engine/overworld/field_moves.asm
 CutFunction:
 	call ClearFieldMoveBuffer
 .loop
@@ -725,7 +725,7 @@ CheckMenuOW:
 | Trainer line of sight | `home/trainer.asm`, `engine/std_scripts.asm` | `CheckTrainerBattle`, `FacingPlayerDistance`, `SeenByTrainerScript`, `TrainerWalkToPlayer` |
 | Interaction | `engine/events.asm`, `engine/npc_movement.asm`, `home/map.asm` | `CheckAPressOW`, `CheckFacingObject`, `CheckFacingSign`, `TryReadSign` |
 | Hidden items | `event/hidden_item.asm` | `HiddenItemScript`, `SIGNPOST_ITEM` |
-| Field moves | `engine/field_moves.asm` | `CutFunction`, `SurfFunction`, `FlyFunction`, `OWFlash`, `wPlayerState` |
+| Field moves | `engine/overworld/field_moves.asm` | `CutFunction`, `SurfFunction`, `FlyFunction`, `OWFlash`, `wPlayerState` |
 | Start menu | `engine/events.asm`, `engine/startmenu.asm` | `CheckMenuOW`, `StartMenuScript`, `StartMenu` |
 
 ---

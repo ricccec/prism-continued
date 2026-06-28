@@ -132,8 +132,8 @@ Loaded into banked ROM; called via `farcall`/`predef` from `home/`.
 |------|-------------|
 | `items.asm` | Item use dispatch |
 | `item_effects.asm` | Per-item effect implementations |
-| `field_moves.asm` | HM field move handlers (Cut, Surf …) |
-| `field_items.asm` | Use item from bag in field |
+| `overworld/field_moves.asm` | HM field move handlers (Cut, Surf …) |
+| `overworld/field_items.asm` | Use item from bag in field |
 | `tmhm.asm`, `tmhm2.asm` | TM/HM teach flow |
 
 ### Battle Interface

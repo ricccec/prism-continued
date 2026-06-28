@@ -386,8 +386,8 @@ CopyNthStruct::
 	rst AddNTimes
 	jr _CopyBytes
 
-FarCopyBytes::
 ; copy bc bytes from a:hl to de
+FarCopyBytes::
 	call StackCallInBankA
 
 ; fallthrough

@@ -99,12 +99,12 @@ export RGBDS="$HOME/rgbds-0.7.0/"
 After that, plain `make nodebug` (and `make prism`, `make gbs`, …) just work.
 
 The build prints a flood of harmless `-Wobsolete` deprecation warnings, which can bury real
-errors. A handy shell alias to surface only the errors (with their reason lines):
+errors. A handy shell alias to surface only the errors:
 
 ```bash
 # build, showing only the actual errors
-alias prism-errors='make nodebug 2>&1 | grep -A1 "^error:"'
+alias prism-errors='make nodebug 2>&1 | grep -E ": (error|fatal):|^make: \*\*\*"'
 ```
 
-RGBDS prints each error across two lines — the file/line trace, then the indented reason —
-so `-A1` is what makes the reason visible.
+RGBDS formats errors as `file.asm(line): error: message`, so the pattern matches on `: error:`
+rather than at line start. `make: ***` lines are included to catch build-system failures.

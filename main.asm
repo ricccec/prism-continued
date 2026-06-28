@@ -286,8 +286,8 @@ SECTION "Code 20", ROMX
 
 INCLUDE "event/slot_machine.asm"
 
-INCLUDE "engine/field_moves.asm"
-INCLUDE "engine/field_items.asm"
+INCLUDE "engine/overworld/field_moves.asm"
+INCLUDE "engine/overworld/field_items.asm"
 
 INCLUDE "engine/stable_rng.asm"
 

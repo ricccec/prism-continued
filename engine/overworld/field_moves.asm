@@ -1303,8 +1303,8 @@ PrintNoBadgeText:
 	; is required.
 	text_jump _BadgeRequiredText
 
-CheckPartyMove:
 ; Check if a monster in your party has move d.
+CheckPartyMove:
 
 	ld e, 0
 	xor a
