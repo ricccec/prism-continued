@@ -469,8 +469,9 @@ TrySurfOW::
 	CheckEngine ENGINE_HAZEBADGE
 	jr z, .quit
 
+; Check party can learn the HM
 	ld d, SURF
-	call CheckPartyMove
+	call CheckPartyCanLearnTMHMMove
 	jr c, .quit
 
 	ld hl, wBikeFlags
@@ -1027,8 +1028,9 @@ DontMeetRequirementsText:
 	text_jump DontMeetStrengthRequirements
 
 TryStrengthOW:
+	; Check party can learn the HM
 	ld d, STRENGTH
-	call CheckPartyMove
+	call CheckPartyCanLearnTMHMMove
 	jr c, .nope
 
 	CheckEngine ENGINE_HAZEBADGE
@@ -1217,8 +1219,9 @@ CanUseRockSmash::
 	ret
 
 TryCutOW::
+	; Check party can learn the HM
 	ld d, CUT
-	call CheckPartyMove
+	call CheckPartyCanLearnTMHMMove
 	jr c, .cant_cut
 
 	CheckEngine ENGINE_NATUREBADGE
