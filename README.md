@@ -2,7 +2,7 @@
 
 Pokémon Prism is a mod of the Generation II game Pokémon Crystal. It is based on the [pokecrystal](https://github.com/pret/pokecrystal) disassembly. It was originally developed by [RainbowDevs](https://rainbowdevs.com).
 
-**This fork is my personal attempt to finish Pokémon Prism.** The last official release was v0.95 build 254. Development on the original stalled; this repo picks up from that point and continues the game toward completion.
+This is an unofficial personal fork of Pokémon Prism. RainbowDevs continues to develop the original — the last public release was v0.95 build 254 (August 2023) — but I wanted a space to explore and extend the game on my own. **This is not affiliated with or endorsed by RainbowDevs**.
 
 ## Documentation
 
