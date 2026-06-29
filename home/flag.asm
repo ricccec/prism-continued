@@ -86,7 +86,18 @@ ClearFlag:
 	ld [hl], a
 	ret
 
-; transition
+; Perform action b on flag c of bitfield [hl].
+;
+; Input:
+;   b:  RESET_FLAG (0), SET_FLAG (1), or CHECK_FLAG (2)
+;   c:  0-based bit index (use BigFlagAction for larger arrays)
+;   hl: pointer to the bitfield in WRAM
+;
+; Output (CHECK_FLAG only):
+;   a, c: masked byte — 0 if bit clear, nonzero if bit set
+;   z:    set if bit is 0 (not present), reset if bit is 1 (present)
+;
+; Preserves bc, de, hl.
 FlagAction::
 	push bc
 	push de
@@ -109,6 +120,7 @@ FlagAction::
 
 EventFlagAction::
 	ld hl, wEventFlags
+; Perform action b onto flag de of bitfield [hl]
 BigFlagAction::
 	ld a, b
 	cp 1

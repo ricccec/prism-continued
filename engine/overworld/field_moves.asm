@@ -466,8 +466,14 @@ TrySurfOW::
 	ccf
 	ret nc
 
+; Check badge
 	CheckEngine ENGINE_HAZEBADGE
 	jr z, .quit
+
+; Check HM in bag
+	ld c, SURF_TMNUM
+	call _CheckTMHMItem
+	jr c, .quit
 
 ; Check party can learn the HM
 	ld d, SURF
@@ -1028,13 +1034,19 @@ DontMeetRequirementsText:
 	text_jump DontMeetStrengthRequirements
 
 TryStrengthOW:
+	; Check bedge
+	CheckEngine ENGINE_HAZEBADGE
+	jr z, .nope
+
+	; Check HM in bag
+	ld c, STRENGTH_TMNUM
+	call _CheckTMHMItem
+	jr c, .nope
+
 	; Check party can learn the HM
 	ld d, STRENGTH
 	call CheckPartyCanLearnTMHMMove
 	jr c, .nope
-
-	CheckEngine ENGINE_HAZEBADGE
-	jr z, .nope
 
 	CheckEngine ENGINE_STRENGTH_ACTIVE
 	jr z, .allow_use
@@ -1219,13 +1231,19 @@ CanUseRockSmash::
 	ret
 
 TryCutOW::
+	; Check badge
+	CheckEngine ENGINE_NATUREBADGE
+	jr z, .cant_cut
+
+	; Check HM in bag
+	ld c, CUT_TMNUM
+	call _CheckTMHMItem
+	jr c, .cant_cut
+
 	; Check party can learn the HM
 	ld d, CUT
 	call CheckPartyCanLearnTMHMMove
 	jr c, .cant_cut
-
-	CheckEngine ENGINE_NATUREBADGE
-	jr z, .cant_cut
 
 	ld a, BANK(AskCutScript)
 	ld hl, AskCutScript

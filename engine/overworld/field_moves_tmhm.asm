@@ -10,7 +10,7 @@
 ;   carry set:   no party mon can learn the move
 ;
 ; Clobbers: a, bc, hl
-CheckPartyCanLearnTMHMMove:
+CheckPartyCanLearnTMHMMove::
     ld e, 0 ; Current monster
     xor a ; Returned monster (if any)
     ld [wCurPartyMon], a
@@ -50,4 +50,26 @@ CheckPartyCanLearnTMHMMove:
     ld [wCurPartyMon], a
     xor a ; carry clear = found (xor always clears C)
     ret
-    
+
+
+; Check whether the player owns a specific TM/HM.
+;
+; Input:
+;   wCurTMHM: 1-based TM/HM number (MOVE_TMNUM constant)
+;   — or —
+;   c: 1-based TM/HM number (call _CheckTMHMItem directly)
+;
+; Output:
+;   carry clear: owned
+;   carry set:   not owned
+CheckTMHMItem::
+        ld a, [wCurTMHM]
+        ld c, a
+_CheckTMHMItem::
+        dec c ; FlagAction expects a 0-based bitfield
+        ld b, CHECK_FLAG
+        ld hl, wTMsHMs
+        call FlagAction
+        ret nz
+        scf ; Set carry flag if not found
+        ret

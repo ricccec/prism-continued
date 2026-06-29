@@ -24,6 +24,7 @@ AskTeachTMHM:
 	ld a, [hl]
 	push af
 	res NO_TEXT_SCROLL, [hl]
+	; copy [wCurItem] into wd256/wCurTMHM
 	ld a, [wCurItem]
 	ld [wd265], a
 	predef GetTMHMMove
