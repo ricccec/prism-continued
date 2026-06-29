@@ -635,7 +635,7 @@
 	newgroup ; 95
 	mapgroup MT_EMBER_SMALL_ROOM, 9, 10
 	mapgroup MT_EMBER_WEST, 40, 13
-	mapgroup MT_EMBER_SOUTH, 10, 30
+	mapgroup MT_EMBER_SOUTH, 10, 40
 	mapgroup SEVII_ISLAND_1, 60, 21
 	mapgroup SEVII_ISLAND_2, 20, 20
 	mapgroup SEVII_ISLAND_3, 20, 20
