@@ -545,8 +545,13 @@ SECTION "Second Map Headers", ROMX
 	map_header_2 MtEmberWest, MT_EMBER_WEST, $28, SOUTH
 	connection south, MT_EMBER_SOUTH, MrEmberSouth, 0, 0, 13, MT_EMBER_WEST
 	
-	map_header_2 MtEmberSouth, MT_EMBER_SOUTH, $43, NORTH
+	map_header_2 MtEmberSouth, MT_EMBER_SOUTH, $43, NORTH | EAST
 	connection north, MT_EMBER_WEST, MtEmberWest, 0, 0, 13, MT_EMBER_SOUTH
+	connection east, KINDLE_ROAD, KindleRoad, 5, 0, 13, MT_EMBER_SOUTH
+
+	map_header_2 KindleRoad, KINDLE_ROAD, $43, WEST
+	connection west, MT_EMBER_SOUTH, MrEmberSouth, 0, 5, 13, KINDLE_ROAD
+
 	; ***** Prism continued end *****
 
 	map_header_2 TunodWaterway, TUNOD_WATERWAY, $31, NORTH | SOUTH
@@ -606,9 +611,9 @@ SECTION "Second Map Headers", ROMX
 	map_header_2 MysteryZoneLeagueRed, MYSTERY_ZONE_RED, 0, 0
 	map_header_2 MysteryZoneLeagueAirport, MYSTERY_ZONE_AIRPORT, 0, 0
 
-	map_header_2 SeviiIsland1, SEVII_ISLAND_1, 67, 0
-	map_header_2 SeviiIsland2, SEVII_ISLAND_2, $43, 0
-	map_header_2 SeviiIsland3, SEVII_ISLAND_3, $43, 0
+	;map_header_2 SeviiIsland1, SEVII_ISLAND_1, 67, 0
+	;map_header_2 SeviiIsland2, SEVII_ISLAND_2, $43, 0
+	;map_header_2 SeviiIsland3, SEVII_ISLAND_3, $43, 0
 
 	map_header_2 Route86UndergroundPath, ROUTE_86_UNDERGROUND_PATH, 1, 0
 	map_header_2 FarawayIslandOutside, FARAWAY_ISLAND_OUTSIDE, $35, 0

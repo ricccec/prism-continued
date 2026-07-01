@@ -409,9 +409,9 @@ INCLUDE "maps/Route56GateUnderground.asm"
 INCLUDE "maps/SilphWarehouseF1.asm"
 INCLUDE "maps/SilphWarehouseB1F.asm"
 INCLUDE "maps/Apartments2D.asm"
-INCLUDE "maps/SeviiIsland1.asm"
-INCLUDE "maps/SeviiIsland2.asm"
-INCLUDE "maps/SeviiIsland3.asm"
+;INCLUDE "maps/SeviiIsland1.asm"
+;INCLUDE "maps/SeviiIsland2.asm"
+;INCLUDE "maps/SeviiIsland3.asm"
 INCLUDE "maps/GoldenrodMartB1F.asm"
 INCLUDE "maps/SoutherlyMart.asm"
 
@@ -447,6 +447,7 @@ INCLUDE "maps/BattleArcadeLobby.asm"
 SECTION "Map Scripts 17", ROMX
 INCLUDE "maps/MtEmberWest.asm"
 INCLUDE "maps/MtEmberSouth.asm"
+INCLUDE "maps/KindleRoad.asm"
 
 SECTION "Map Scripts small 1", ROMX
 INCLUDE "maps/RuinsF3.asm"
