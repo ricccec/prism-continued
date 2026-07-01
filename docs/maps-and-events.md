@@ -187,7 +187,52 @@ connection <direction>, <neighbor_id>, <neighbor_label>, <edge_offset>, <neighbo
 
 The connection bitmask in `map_header_2`'s last argument (`NORTH | EAST`) must include a bit for every `connection` you declare; valid bits are `NORTH`, `SOUTH`, `EAST`, `WEST`.
 
-`(edge_offset - neighbor_offset) * -2` is encoded as the camera-alignment byte, allowing maps of different widths to scroll smoothly into each other when their edges don't share the same x/y coordinate.
+### Alignment diagram
+
+`edge_offset` and `neighbor_offset` describe how the two maps line up along the shared edge.
+
+**North/South** — offsets are columns (x), strip_length is width:
+
+```
+col:  0   1   2   3   4   5   6   7   8   9  10  11  12
+      [         Route 73 (neighbor, to the north)       ]
+                  [     Oxalis City (this map)     ]
+                  ^                               ^
+           edge_offset=5                  5+strip_length=17
+      ^
+ neighbor_offset=0
+
+connection north, ROUTE_73, Route73, 5, 0, 12, OXALIS_CITY
+```
+
+Oxalis City's left edge is 5 tiles to the right of Route 73's left edge.
+The engine copies a 12-tile-wide strip from Route 73's bottom rows into
+Oxalis City's north border.
+
+**East/West** — offsets are rows (y), strip_length is height:
+
+```
+row:  0  [  Route 68  |  Acania Docks  ]
+row:  1  [  Route 68  |  Acania Docks  ]  ← edge_offset=1, neighbor_offset=0
+row:  2  [  Route 68  |  Acania Docks  ]
+         ...10 rows tall (strip_length=10)
+
+connection west, ACANIA_DOCKS, AcaniaDocks, 1, 0, 10, ROUTE_68
+```
+
+Route 68's west border starts 1 row below Acania Docks' top edge.
+
+### Alignment invariant
+
+`(edge_offset − neighbor_offset) × −2` is encoded as the camera-alignment byte so the camera shifts smoothly when crossing the border. Reciprocal connections must have opposite deltas:
+
+```asm
+; From Oxalis City north to Route 73:  delta = 5 − 0 = +5
+connection north, ROUTE_73, Route73, 5, 0, 12, OXALIS_CITY
+
+; From Route 73 south to Oxalis City:  delta = −3 − 2 = −5  (always opposite)
+connection south, OXALIS_CITY, OxalisCity, -3, 2, 19, ROUTE_73
+```
 
 ---
 
