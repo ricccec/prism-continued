@@ -23,11 +23,15 @@ Route66_BlockData:
 	INCBIN "maps/blk/Route66.ablk.lz"
 Route67_BlockData:
 	INCBIN "maps/blk/Route67.ablk.lz"
-SeviiIsland1_BlockData:
-	INCBIN "maps/blk/SeviiIsland1.ablk.lz"
-SeviiIsland2_BlockData:
-SeviiIsland3_BlockData:
-	INCBIN "maps/blk/SeviiIsland2.ablk.lz"
+;SeviiIsland1_BlockData:
+;	INCBIN "maps/blk/SeviiIsland1.ablk.lz"
+;SeviiIsland2_BlockData:
+;SeviiIsland3_BlockData:
+;	INCBIN "maps/blk/SeviiIsland2.ablk.lz"
+HauntedMansion_BlockData:
+	INCBIN "maps/blk/HauntedMansion.ablk.lz"
+HauntedMansionBasement_BlockData:
+	INCBIN "maps/blk/HauntedMansionBasement.ablk.lz"
 
 SECTION "Map block data 3", ROMX
 GoldenrodCity_BlockData:
@@ -664,8 +668,6 @@ Route65_BlockData:
 SECTION "Map block data 6", ROMX
 MersonCaveB1F_BlockData:
 	INCBIN "maps/blk/MersonCaveB1F.ablk.lz"
-HauntedMansionBasement_BlockData:
-	INCBIN "maps/blk/HauntedMansionBasement.ablk.lz"
 MersonCaveB2F_BlockData:
 	INCBIN "maps/blk/MersonCaveB2F.ablk.lz"
 MtBoulderB1F_BlockData:
@@ -830,6 +832,7 @@ TunodWaterway_BlockData:
 Route87_BlockData:
 	INCBIN "maps/blk/Route87.ablk.lz"
 
+; ***** Prism continued *****
 SECTION "Map block data 11", ROMX
 MtEmberSmallRoom_BlockData:
 	INCBIN "maps/blk/MtEmberSmallRoom.blk.lz"
@@ -837,12 +840,12 @@ MtEmberWest_BlockData:
 	INCBIN "maps/blk/MtEmberWest.blk.lz"
 MtEmberSouth_BlockData:
 	INCBIN "maps/blk/MtEmberSouth.blk.lz"
+KindleRoad_BlockData:
+	INCBIN "maps/blk/KindleRoad.blk.lz"
 
 SECTION "Map block data 12", ROMX
 MersonCaveB3F_BlockData:
 	INCBIN "maps/blk/MersonCaveB3F.ablk.lz"
-HauntedMansion_BlockData:
-	INCBIN "maps/blk/HauntedMansion.ablk.lz"
 SenecaCavernsB2F_BlockData:
 	INCBIN "maps/blk/SenecaCavernsB2F.ablk.lz"
 SenecaCavernsF1_BlockData:
