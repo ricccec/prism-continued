@@ -1,6 +1,12 @@
 INCLUDE "macros/enum.asm"
 INCLUDE "constants/landmark_constants.asm"
 
+; OR'ing a landmark ID with $80 (e.g. `KINDLE_ROAD | $80`) marks it as the
+; anchor cell, i.e. the one where the cursor/name label will appear on the map
+;screen.
+; Player-facing landmark names are defined in engine/landmarks.asm
+
+; x, y, landmark ID
 MACRO landmark
 	DEF x = \1
 	DEF y = \2
