@@ -678,6 +678,57 @@ CutFunction:
 	ret
 ```
 
+### Cut, end to end: how a tree becomes grass
+
+`CheckMapForSomethingToCut` (`engine/overworld/field_moves.asm`) is where "a tree in front?" is actually decided, and it asks **two** independent questions about the block you face. Both must pass:
+
+```asm
+; engine/overworld/field_moves.asm  (CheckMapForSomethingToCut, abridged)
+	call GetFacingTileCoord
+	ld c, a
+	callba CheckCutCollision      ; 1. is the faced quadrant a cuttable collision class?
+	ccf
+	ret c
+	call GetBlockLocation         ; hl = address of this block inside wOverworldMap
+	ld c, [hl]                    ; c = the block ID sitting there
+	ld hl, CutTreeBlockPointers
+	call CheckOverworldTileArrays ; 2. is that block ID registered as cuttable in this tileset?
+	pop hl
+	ccf
+	ret c
+```
+
+The first question is collision: `CheckCutCollision` (`engine/tile_events.asm`) confirms the faced quadrant is `COLL_CUT_TREE` (or one of the tall-grass classes). Recall from Chapter 5 that the `*_collision.asm` files are indexed **by block ID**, and each `tilecoll` line gives the collision of a block's four quadrants — so making a block cuttable means giving one of its quadrants the `CUT_TREE` class.
+
+The second question is registration. `CutTreeBlockPointers` is a dictionary keyed by tileset; each tileset points at its own little table of **three-byte records**:
+
+```asm
+; engine/overworld/field_moves.asm
+.kanto	; Kanto OW
+	db $82, $0a, $00 ; tree
+	db -1
+```
+
+The three bytes are **[block to match] · [block to swap in] · [animation index]**. `CheckOverworldTileArrays` walks the current tileset's table (stride 3) looking for the faced block ID; on a hit it returns the second byte (the replacement block) in `b` and the third (the animation) in `c`. `CheckMapForSomethingToCut` then stashes three things in WRAM: the replacement block into `wFieldMoveCutTileReplacement`, the animation into `wWhichCutAnimation`, and — crucially — the *address of the block inside `wOverworldMap`* into `wFieldMoveCutTileLocation`. It has now recorded both *what* to draw and *where*.
+
+The transformation itself is one store. Once the "used CUT!" script has played the cry and animation, `CutDownTreeOrGrass` dereferences that saved address and overwrites the live block:
+
+```asm
+; engine/overworld/field_moves.asm  (CutDownTreeOrGrass, abridged)
+	ld hl, wFieldMoveCutTileLocation
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a                              ; hl = the tree's cell in wOverworldMap
+	ld a, [wFieldMoveCutTileReplacement]
+	ld [hl], a                           ; tree block ID → grass block ID
+	...
+	call GetMovementPermissions          ; recompute what is now walkable
+```
+
+Because the block ID in `wOverworldMap` is the single source of truth (§8.3), that one byte-write changes everything downstream: the next scroll repaints the grass tiles, and `GetMovementPermissions` re-reads the new block's collision so you can walk where the trunk used to be. The third byte, meanwhile, chose the flourish — `OWCutAnimation` (`event/field_moves.asm`) reads `wWhichCutAnimation` and plays *split the tree in half* for `$00` or *mow the lawn* (flying leaves) for `$01`, which is why every tree row ends in `$00` and every grass row in `$01`.
+
+The practical upshot for map-making: a cuttable tree needs **both** halves wired, and they live in different files. The block must carry a `CUT_TREE` quadrant in its tileset's `*_collision.asm`, *and* the block ID must be listed in that tileset's table inside `CutTreeBlockPointers`. Set only the collision and Cut's prompt appears but nothing happens after "Yes" (the block lookup fails); list the block without the collision and it fails the first check instead.
+
 The pattern repeats for each move, varying only the badge and the terrain test — `CutFunction`, `SurfFunction`, `FlyFunction`, `StrengthFunction`, `OWFlash`, `HeadbuttFunction`, `RockSmashFunction` (Prism does not implement Waterfall or Whirlpool as separate field moves). Two of them change *persistent state* rather than a single tile:
 
 - **Surf** flips the player into a riding state. `SurfFunction` checks `ENGINE_HAZEBADGE`, confirms the faced tile is water (and not too-fast current), then sets `wPlayerState` to `PLAYER_SURF` (`constants/wram_constants.asm`). That state survives until you step back onto land, and it changes both the player sprite and which collision classes count as walkable.
@@ -726,6 +777,7 @@ CheckMenuOW:
 | Interaction | `engine/events.asm`, `engine/npc_movement.asm`, `home/map.asm` | `CheckAPressOW`, `CheckFacingObject`, `CheckFacingSign`, `TryReadSign` |
 | Hidden items | `event/hidden_item.asm` | `HiddenItemScript`, `SIGNPOST_ITEM` |
 | Field moves | `engine/overworld/field_moves.asm` | `CutFunction`, `SurfFunction`, `FlyFunction`, `OWFlash`, `wPlayerState` |
+| Cut block-swap | `engine/overworld/field_moves.asm`, `event/field_moves.asm` | `CheckMapForSomethingToCut`, `CutTreeBlockPointers`, `CheckOverworldTileArrays`, `CutDownTreeOrGrass`, `OWCutAnimation`, `wFieldMoveCutTileLocation`/`Replacement`, `wWhichCutAnimation` |
 | Start menu | `engine/events.asm`, `engine/startmenu.asm` | `CheckMenuOW`, `StartMenuScript`, `StartMenu` |
 
 ---
