@@ -642,4 +642,5 @@
 	; mapgroup SEVII_ISLAND_3, 20, 20
 
 	newgroup ; 96 (Sevii Islands)
-	mapgroup ONE_ISLAND, 18, 11
+	mapgroup ONE_ISLAND, 21, 11
+	mapgroup TREASURE_BEACH, 10, 11

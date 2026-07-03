@@ -449,6 +449,7 @@ INCLUDE "maps/MtEmberWest.asm"
 INCLUDE "maps/MtEmberSouth.asm"
 INCLUDE "maps/KindleRoad.asm"
 INCLUDE "maps/OneIsland.asm"
+INCLUDE "maps/TreasureBeach.asm"
 
 SECTION "Map Scripts small 1", ROMX
 INCLUDE "maps/RuinsF3.asm"

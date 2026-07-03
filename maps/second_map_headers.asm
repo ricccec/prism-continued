@@ -554,8 +554,12 @@ SECTION "Second Map Headers", ROMX
 	connection north, MT_EMBER_SOUTH, MrEmberSouth, 0, 41, 12, KINDLE_ROAD
 	connection west, ONE_ISLAND, OneIsland, 51, 0, 14, KINDLE_ROAD
 
-	map_header_2 OneIsland, ONE_ISLAND, $43, EAST
+	map_header_2 OneIsland, ONE_ISLAND, $43, SOUTH | EAST
+	connection south, TREASURE_BEACH, TreasureBeach, 0, 0, 11, ONE_ISLAND
 	connection east, KINDLE_ROAD, KindleRoad, 0, 51, 14, ONE_ISLAND
+
+	map_header_2 TreasureBeach, TREASURE_BEACH, $43, NORTH
+	connection north, ONE_ISLAND, OneIsland, 0, 0, 11, TREASURE_BEACH
 
 	; ***** Prism continued end *****
 
