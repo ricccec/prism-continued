@@ -13,28 +13,28 @@ INCLUDE "trainers/groups/bruce.asm"
 INCLUDE "trainers/groups/boarder.asm"
 INCLUDE "trainers/groups/bug_catcher.asm"
 INCLUDE "trainers/groups/bugsy.asm"
-INCLUDE "trainers/groups/burglar.asm"
+INCLUDE "trainers/groups/burglar.asm"   ; Under utilized
 INCLUDE "trainers/groups/cadence.asm"
-INCLUDE "trainers/groups/camper.asm"
-INCLUDE "trainers/groups/cheerleader.asm"
+INCLUDE "trainers/groups/camper.asm"   ; Under utilized
+INCLUDE "trainers/groups/cheerleader.asm"   ; Under utilized
 INCLUDE "trainers/groups/cooltrainerF.asm"
 INCLUDE "trainers/groups/cooltrainerM.asm"
 INCLUDE "trainers/groups/daichi.asm"
-INCLUDE "trainers/groups/delinquentf.asm"
-INCLUDE "trainers/groups/delinquentm.asm"
+INCLUDE "trainers/groups/delinquentf.asm"   ; Under utilized
+INCLUDE "trainers/groups/delinquentm.asm"   ; Under utilized
 INCLUDE "trainers/groups/edison.asm"
 INCLUDE "trainers/groups/ernest.asm"
 INCLUDE "trainers/groups/firebreather.asm"
 INCLUDE "trainers/groups/fisher.asm"
-INCLUDE "trainers/groups/gentleman.asm"
+INCLUDE "trainers/groups/gentleman.asm"     ; Under utilized
 INCLUDE "trainers/groups/gold.asm"
 INCLUDE "trainers/groups/gruntM.asm"
-INCLUDE "trainers/groups/guitarist.asm"
-INCLUDE "trainers/groups/guitaristf.asm"
+INCLUDE "trainers/groups/guitarist.asm"     ; Under utilized
+INCLUDE "trainers/groups/guitaristf.asm"    ; Under utilized
 INCLUDE "trainers/groups/hiker.asm"
 INCLUDE "trainers/groups/joe.asm"
 INCLUDE "trainers/groups/josiah.asm"
-INCLUDE "trainers/groups/juggler.asm"
+INCLUDE "trainers/groups/juggler.asm"   ; Under utilized
 INCLUDE "trainers/groups/karpman.asm"
 INCLUDE "trainers/groups/koji.asm"
 INCLUDE "trainers/groups/lance.asm"
@@ -47,28 +47,28 @@ INCLUDE "trainers/groups/mura.asm"
 INCLUDE "trainers/groups/officer.asm"
 INCLUDE "trainers/groups/patroller.asm"
 INCLUDE "trainers/groups/picnicker.asm"
-INCLUDE "trainers/groups/pokefanF.asm"
+INCLUDE "trainers/groups/pokefanF.asm"  ; Under utilized
 INCLUDE "trainers/groups/pokefanM.asm"
-INCLUDE "trainers/groups/pokemaniac.asm"
+INCLUDE "trainers/groups/pokemaniac.asm"    ; Under utilized
 INCLUDE "trainers/groups/psychic.asm"
 INCLUDE "trainers/groups/red.asm"
 INCLUDE "trainers/groups/rinji.asm"
 INCLUDE "trainers/groups/rival.asm"
 INCLUDE "trainers/groups/sabrina.asm"
 INCLUDE "trainers/groups/sage.asm"
-INCLUDE "trainers/groups/sailor.asm"
-INCLUDE "trainers/groups/schoolboy.asm"
+INCLUDE "trainers/groups/sailor.asm"    ; Under utilized
+INCLUDE "trainers/groups/schoolboy.asm" ; Under utilized
 INCLUDE "trainers/groups/scientist.asm"
 INCLUDE "trainers/groups/sheryl.asm"
 INCLUDE "trainers/groups/silver.asm"
-INCLUDE "trainers/groups/skier.asm"
+INCLUDE "trainers/groups/skier.asm" ; Under utilized
 INCLUDE "trainers/groups/sora.asm"
 INCLUDE "trainers/groups/sparky.asm"
 INCLUDE "trainers/groups/super_nerd.asm"
 INCLUDE "trainers/groups/swimmerF.asm"
 INCLUDE "trainers/groups/swimmerM.asm"
-INCLUDE "trainers/groups/teacher.asm"
-INCLUDE "trainers/groups/twins.asm"
+INCLUDE "trainers/groups/teacher.asm"   ; Under utilized
+INCLUDE "trainers/groups/twins.asm"  ; Under utilized
 INCLUDE "trainers/groups/whitney.asm"
-INCLUDE "trainers/groups/youngster.asm"
+INCLUDE "trainers/groups/youngster.asm" ; Under utilized
 INCLUDE "trainers/groups/yuki.asm"

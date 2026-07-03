@@ -60,3 +60,13 @@ JugglerGroup:
 		db 0
 		db 0
 	db -1
+
+	; 5
+	db "Augustus@"
+
+	db TRAINERTYPE_NORMAL
+
+	db 41, MAGMAR
+	db 41, MACHOKE
+	db 41, ELECTABUZZ
+	db -1
