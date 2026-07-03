@@ -208,13 +208,16 @@ CutTreeBlockPointers:
 	db -1
 
 .rijon ; Rijon OW
-.kanto ; Kanto OW
 	db $0b, $0a, $01 ; grass
 	db $32, $6d, $00 ; tree
 	db $33, $6c, $00 ; tree
 	db $34, $6f, $00 ; tree
 	db $35, $41, $00 ; tree
 	db $60, $6e, $00 ; tree
+	db -1
+	
+.kanto	; Kanto OW
+	db $82, $35, $00 ; tree
 	db -1
 
 .park ; National Park

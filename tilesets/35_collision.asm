@@ -51,7 +51,7 @@
 	tilecoll MINING, FLOOR, MINING, FLOOR ; 32
 	tilecoll MINING, MINING, FLOOR, FLOOR ; 33
 	tilecoll WALL, MINING, WALL, MINING ; 34
-	tilecoll MINING, FLOOR, MINING, FLOOR ; 35
+	tilecoll WALL, FLOOR, WALL, FLOOR ; 35
 	tilecoll MINING, WALL, MINING, WALL ; 36
 	tilecoll WALL, WALL, WALL, WALL ; 37
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 38
@@ -128,7 +128,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; 7f
 	tilecoll WALL, WALL, WALL, WALL ; 80
 	tilecoll WALL, WATER, WALL, WALL ; 81
-	tilecoll WALL, WALL, WALL, FLOOR ; 82
+	tilecoll WALL, CUT_TREE, WALL, FLOOR ; 82
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 83
 	tilecoll WALL, FLOOR, WALL, WALL ; 84
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 85
