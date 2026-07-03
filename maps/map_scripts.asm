@@ -448,6 +448,7 @@ SECTION "Map Scripts 17", ROMX
 INCLUDE "maps/MtEmberWest.asm"
 INCLUDE "maps/MtEmberSouth.asm"
 INCLUDE "maps/KindleRoad.asm"
+INCLUDE "maps/OneIsland.asm"
 
 SECTION "Map Scripts small 1", ROMX
 INCLUDE "maps/RuinsF3.asm"

@@ -842,6 +842,8 @@ MtEmberSouth_BlockData:
 	INCBIN "maps/blk/MtEmberSouth.blk.lz"
 KindleRoad_BlockData:
 	INCBIN "maps/blk/KindleRoad.blk.lz"
+OneIsland_BlockData:
+	INCBIN "maps/blk/OneIsland.blk.lz"
 
 SECTION "Map block data 12", ROMX
 MersonCaveB3F_BlockData:

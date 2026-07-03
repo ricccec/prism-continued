@@ -637,6 +637,9 @@
 	mapgroup MT_EMBER_WEST, 40, 13
 	mapgroup MT_EMBER_SOUTH, 15, 52
 	mapgroup KINDLE_ROAD, 64, 12
-	mapgroup SEVII_ISLAND_1, 60, 21
-	mapgroup SEVII_ISLAND_2, 20, 20
-	mapgroup SEVII_ISLAND_3, 20, 20
+	; mapgroup SEVII_ISLAND_1, 60, 21
+	; mapgroup SEVII_ISLAND_2, 20, 20
+	; mapgroup SEVII_ISLAND_3, 20, 20
+
+	newgroup ; 96 (Sevii Islands)
+	mapgroup ONE_ISLAND, 18, 11
