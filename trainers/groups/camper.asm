@@ -36,3 +36,15 @@ CamperGroup:
 	db 81, NINETALES
 	db 82, MAGCARGO
 	db -1
+
+	; ****** Prism continued *****
+
+	; 5
+	db "Marko@"
+
+	db TRAINERTYPE_NORMAL
+
+	db 80, ARCANINE
+	db 81, NINETALES
+	db 82, MAGCARGO
+	db -1

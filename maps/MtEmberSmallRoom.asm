@@ -181,8 +181,10 @@ MtEmberSmallRoomNPC:
 MtEmberSmallRoom_MapEventHeader:: db 0, 0
 
 .Warps
-	db 1
+	db 3
 	warp_def $4, $0a, 4, MT_EMBER_ROOM_1
+	warp_def $5, $3, 1, MT_EMBER_WEST
+	warp_def $5, $2, 1, MT_EMBER_WEST
 
 .CoordEvents
 	db 0

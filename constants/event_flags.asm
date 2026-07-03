@@ -1345,7 +1345,7 @@
 	const EVENT_EMBER_DYNAMITE_GUY
 	const EVENT_KINDLE_ROAD_OPEN
 	const EVENT_EMBER_DYNAMITE_GUY_LEFT
-	const skip
+	const EVENT_MT_EMBER_WEST_TRAINER_1
 	const skip
 	const skip
 	const skip

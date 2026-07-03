@@ -58,7 +58,7 @@ MinerGroup:
 	db 83, HITMONCHAN
 	db -1
 
-	; ****** Sevii Island *****
+	; ****** Prism continued *****
 
 	; 7
 	db "Mac@"
