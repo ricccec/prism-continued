@@ -546,12 +546,12 @@ SECTION "Second Map Headers", ROMX
 	map_header_2 MtEmberWest, MT_EMBER_WEST, $28, SOUTH
 	connection south, MT_EMBER_SOUTH, MrEmberSouth, 0, 0, 13, MT_EMBER_WEST
 	
-	map_header_2 MtEmberSouth, MT_EMBER_SOUTH, $43, NORTH | EAST
+	map_header_2 MtEmberSouth, MT_EMBER_SOUTH, $43, NORTH | SOUTH
 	connection north, MT_EMBER_WEST, MtEmberWest, 0, 0, 13, MT_EMBER_SOUTH
-	connection east, KINDLE_ROAD, KindleRoad, 5, 0, 13, MT_EMBER_SOUTH
+	connection south, KINDLE_ROAD, KindleRoad, 41, 0, 12, MT_EMBER_SOUTH
 
-	map_header_2 KindleRoad, KINDLE_ROAD, $43, WEST
-	connection west, MT_EMBER_SOUTH, MrEmberSouth, 0, 5, 13, KINDLE_ROAD
+	map_header_2 KindleRoad, KINDLE_ROAD, $43, NORTH
+	connection north, MT_EMBER_SOUTH, MrEmberSouth, 0, 41, 12, KINDLE_ROAD
 
 	; ***** Prism continued end *****
 
