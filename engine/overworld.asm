@@ -877,7 +877,9 @@ OutdoorSprites:
 	dw CaperRidgeSprites ; 92
 	dw CaperRidgeSprites ; 93
 	dw CaperRidgeSprites ; 94
-	dw SeviiIslandSprites ; 95
+	dw MtEmberWestSprites ; 95
+	dw SeviiIslandSprites ; 96
+	
 
 IntroSprites:
 ; IntroOutside
@@ -1327,6 +1329,25 @@ SoutherlySprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db SPRITE_TYPHLOSION
+	db 0 ; end
+
+MtEmberWestSprites:
+	db SPRITE_GRAMPS
+	db SPRITE_CAMPER
+	db SPRITE_PICNICKER
+	db SPRITE_MINER
+	db SPRITE_BIRDKEEPER
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_TEACHER
+	db SPRITE_SWIMMER_GUY
+	db SPRITE_SWIMMER_GIRL
+	db SPRITE_FISHER
+	db SPRITE_R_BEAUTY
+	db SPRITE_R_JUGGLER
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_HIKER
+	db SPRITE_ROCK
+	db SPRITE_POKE_BALL
 	db 0 ; end
 
 SeviiIslandSprites:
