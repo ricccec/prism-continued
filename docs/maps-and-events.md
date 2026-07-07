@@ -99,41 +99,10 @@ implementations in `engine/scripting.asm`.
 
 ### Common script commands
 
-```asm
-; Control flow
-scall   <ptr>               ; call sub-script (returns)
-sreturn                     ; return from scall
-end                         ; end script, resume normal play
-jump    <ptr>               ; unconditional jump
-jumptrue   <ptr>            ; jump if last check was true
-jumpfalse  <ptr>            ; jump if last check was false
-if_equal   <val>, <ptr>     ; compare and branch
-
-; Flags
-setevent   <EVENT_FLAG>     ; set an event flag permanently
-resetevent <EVENT_FLAG>     ; clear an event flag
-checkflag  <EVENT_FLAG>     ; set Z if flag is set (use with jumptrue)
-setvar     <id>, <val>      ; set a script variable
-checkvar   <id>, <val>      ; compare a script variable
-
-; Text / UI
-opentext                    ; lock player, open text box
-writetext  <ptr>            ; queue text for display
-waittext                    ; wait for player to dismiss
-closetext                   ; close text box, unlock player
-yesorno                     ; yes/no prompt, sets carry on "yes"
-
-; Items / Pokémon
-giveitem   <ITEM_*>, <qty>  ; add item to bag
-takeitem   <ITEM_*>, <qty>  ; remove item from bag
-checkitem  <ITEM_*>         ; true if player has item
-givemon    <species>, <lvl> ; add Pokémon to party
-givetm     <TM_id>          ; give TM disc
-
-; Map control
-warp      <map>, <warp_id>  ; teleport player
-special   <SPECIAL_*>       ; call a special function by ID
-```
+See [script-cheatsheet.md](script-cheatsheet.md) for a full, verified
+reference of script commands, movement lists, and text formatting macros —
+including the two distinct conditional systems (`iftrue`/`iffalse`/`if_equal`
+vs. `sif`/`then`/`selse`/`sendif`) and common gotchas.
 
 ### Script variable IDs
 
