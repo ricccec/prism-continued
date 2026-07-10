@@ -1342,19 +1342,19 @@
 	const skip
 	const skip
 	; ***** PRISM CONTINUED *****
-	const EVENT_EMBER_DYNAMITE_GUY
+	const EVENT_EMBER_DYNAMITE_GUY						; 1344
 	const EVENT_KINDLE_ROAD_OPEN
 	const EVENT_EMBER_DYNAMITE_GUY_LEFT
 	const EVENT_MT_EMBER_WEST_TRAINER_1
 	const EVENT_MT_EMBER_WEST_TRAINER_2
-	const skip
-	const skip
-	const skip
-	const skip
-	const skip
-	const skip
-	const skip
-	const skip
+	const EVENT_MT_EMBER_WEST_TRAINER_3
+	const EVENT_MT_EMBER_WEST_TRAINER_4
+	const EVENT_MT_EMBER_WEST_TRAINER_5 				; 1351
+	const EVENT_MT_EMBER_WEST_TRAINER_6
+	const EVENT_MT_EMBER_WEST_TRAINER_7
+	const EVENT_MT_EMBER_WEST_JUGGLER_BEATEN
+	const EVENT_GOT_PRIZE_FROM_MT_EMBER_WEST_JUGGLER	; 1355
+	const EVENT_MT_EMBER_WEST_ITEM_1
 	const skip
 	const skip
 	const skip
