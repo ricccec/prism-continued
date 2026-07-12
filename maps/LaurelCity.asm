@@ -144,13 +144,13 @@ LaurelCity_MapEventHeader:: db 0, 0
 	warp_def $11, $2, 4, LAUREL_GATE
 	warp_def $b, $f, 1, LAUREL_STICK
 	warp_def $b, $22, 15, MAGIKARP_CAVERNS_MAIN
-	warp_def $1, $15, 1, ORPHANAGE
+	warp_def $1, $15, 1, ORPHANAGE	; FIXME
 	warp_def $5, $16, 1, LAUREL_LAB
 	warp_def $1b, $17, 1, LAUREL_POKECENTER
-	warp_def $1, $16, 1, SPURGE_HOUSE
+	warp_def $1, $16, 1, SPURGE_HOUSE	; FIXME
 	warp_def $3, $2, 1, LAUREL_GYM
 	warp_def $15, $12, 2, LAUREL_MART
-	warp_def $21, $16, 1, ACANIA_HOUSE
+	warp_def $21, $16, 1, ACANIA_HOUSE	; FIXME
 	warp_def $17, $5, 1, LAUREL_NAMERATER
 	warp_def $10, $2, 3, LAUREL_GATE
 

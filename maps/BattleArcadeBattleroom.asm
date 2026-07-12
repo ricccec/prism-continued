@@ -7,9 +7,10 @@ BattleArcadeBattleroom_MapScriptHeader:
 BattleArcadeBattleroom_MapEventHeader:: db 0, 0
 
 .Warps
-	db 2
-	warp_def $7, $3, 3, BATTLE_ARCADE_LOBBY
-	warp_def $7, $4, 3, BATTLE_ARCADE_LOBBY
+	; FIXME we don't need these
+	db 2 
+	warp_def $7, $3, 3, BATTLE_ARCADE_LOBBY ; FIXME
+	warp_def $7, $4, 3, BATTLE_ARCADE_LOBBY ; FIXME
 
 .CoordEvents
 	db 0

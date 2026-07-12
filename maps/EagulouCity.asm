@@ -112,7 +112,7 @@ EagulouCity_MapEventHeader:: db 0, 0
 	signpost 19, 21, SIGNPOST_LOAD, EagulouCityHousePlotSign
 
 .ObjectEvents
-	db 4
+	db 4	; FIXME
 	person_event SPRITE_OFFICER, 11, 33, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_BROWN, PERSONTYPE_TEXTFP, 0, EagulouCity_NPC_1, -1
 	person_event SPRITE_GENTLEMAN, 19, 19, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_TEXTFP, 0, EagulouCity_NPC_2, -1
 	person_event SPRITE_COOLTRAINER_M,  8, 11, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, PAL_OW_GREEN, PERSONTYPE_TEXTFP, 0, EagulouCity_NPC_3, -1

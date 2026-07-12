@@ -78,3 +78,4 @@ TrainerGroups:
 	dw NULL ;Spark
 	dw BrownGroup
 	dw GuitaristFGroup
+	; FIXME Cal is missing

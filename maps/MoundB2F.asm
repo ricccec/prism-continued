@@ -180,8 +180,8 @@ MoundB2FDark_MapEventHeader:: db 0, 0
 	warp_def 41, 5, 53, MOUND_B3F
 	warp_def 41, 6, 54, MOUND_B3F
 	warp_def 41, 7, 55, MOUND_B3F
-	warp_def 40, 8, 56, MOUND_B3F
-	warp_def 40, 8, 57, MOUND_B3F
+	warp_def 40, 8, 56, MOUND_B3F	; FIXME
+	warp_def 40, 8, 57, MOUND_B3F	; FIXME
 	warp_def 4, 13, 1, MOUND_B3F
 	warp_def 5, 13, 59, MOUND_B3F
 	warp_def 14, 11, 60, MOUND_B3F
@@ -189,7 +189,7 @@ MoundB2FDark_MapEventHeader:: db 0, 0
 	warp_def 21, 11, 62, MOUND_B3F
 	warp_def 21, 18, 63, MOUND_B3F
 	warp_def 32, 19, 64, MOUND_B3F
-	warp_def 40, 8, 65, MOUND_B3F
+	warp_def 40, 8, 65, MOUND_B3F	; FIXME
 	warp_def 41, 27, 66, MOUND_B3F
 
 .CoordEvents

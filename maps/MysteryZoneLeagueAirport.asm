@@ -43,5 +43,5 @@ MysteryZoneLeagueAirport_MapEventHeader:: db 0, 0
 
 .BGEvents: db 0
 
-.ObjectEvents: db 3
+.ObjectEvents: db 3 ; FIXME
 	person_event SPRITE_OFFICER,  8,  3, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_YELLOW, PERSONTYPE_SCRIPT, 0, MysteryZoneAirportNPC, -1

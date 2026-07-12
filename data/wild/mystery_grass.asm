@@ -1,3 +1,4 @@
+	; FIXME
 	wildmap CAPER_RIDGE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn

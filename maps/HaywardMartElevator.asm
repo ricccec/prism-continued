@@ -41,4 +41,4 @@ HaywardMartElevator_MapEventHeader:: db 0, 0
 	signpost 0, 3, SIGNPOST_READ, HaywardMartElevatorControls
 
 	;people-events
-.ObjectEvents
+.ObjectEvents ; FIXME

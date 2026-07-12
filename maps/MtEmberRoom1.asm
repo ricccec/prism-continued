@@ -70,6 +70,6 @@ MtEmberRoom1_MapEventHeader:: db 0, 0
 	db 0
 
 .ObjectEvents
-	db 2
+	db 1
 	; person_event SPRITE_MINER, 5, 11, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_TEXTFP, 0, MtEmberRoom1NPC, -1
 	person_event SPRITE_COOLTRAINER_M,  7,  5, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_GENERICTRAINER, 1, MtEmberRoom1_Trainer_1, -1

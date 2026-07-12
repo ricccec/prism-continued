@@ -485,7 +485,7 @@
 	db 16, PIKACHU
 
 	wildmap LAUREL_FOREST_POKEMON_ONLY
-	db 3, 3, 3
+	db 3, 3, 3	; FIXME Shouldn't be percent???
 	; morn
 	db 13, CHINGLING
 	db 14, SHROOMISH

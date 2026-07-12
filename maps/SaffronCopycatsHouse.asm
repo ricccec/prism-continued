@@ -55,7 +55,7 @@ SaffronCopycatsHouse_MapEventHeader:
 	db 0
 
 	;people-events
-	db 4
+	db 4	; FIXME
 	person_event SPRITE_LASS, 3, 2, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_TEXTFP, 0, SaffronCopycat, -1
 	person_event SPRITE_PIKACHU, 15, 2, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_TEXT, 0, SaffronCopycatsHousePikachuDoll, -1
 	person_event SPRITE_GENGAR, 15, 6, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_TEXT, 0, SaffronCopycatsHouseGengarDoll, -1

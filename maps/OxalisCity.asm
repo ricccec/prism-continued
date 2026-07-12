@@ -162,7 +162,7 @@ OxalisCity_MapEventHeader:: db 0, 0
 
 .Warps: db 11
 	warp_def 7, 12, 1, OXALIS_SALON
-	warp_def 23, 27, 1, ROUTE_73_GATE
+	warp_def 23, 27, 1, ROUTE_73_GATE	; FIXME
 	warp_def 21, 33, 1, HAPPINESS_RATER
 	warp_def 31, 23, 5, ROUTE_72_GATE
 	warp_def 15, 22, 1, OXALIS_GYM

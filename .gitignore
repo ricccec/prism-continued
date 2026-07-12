@@ -15,6 +15,7 @@ gfx/pics/*/bitmask.asm
 gfx/pics/*/dimensions.asm
 gfx/pics/*/normal.pal
 gfx/pics/*/shiny.pal
+contents/bank_ends.txt
 
 # precompiled Python
 *.pyc
