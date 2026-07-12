@@ -15,11 +15,12 @@ MtEmberWest_MapEventHeader:: db 0, 0
 	db 0
 
 .BGEvents
-	db 1
+	db 2
 	signpost 19,  7, SIGNPOST_LOAD, MtEmberWestDirectionsSign
+	signpost 77, 13, SIGNPOST_TEXT, MtEmberWestBeachSign
 
 .ObjectEvents
-	db 12
+	db 14
 	person_event SPRITE_CAMPER, 4, 9, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 8 + PAL_OW_GREEN, PERSONTYPE_GENERICTRAINER, 3, MtEmberWest_Trainer_1, -1
 	person_event SPRITE_MINER, 17, 5, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_OW_BLUE, PERSONTYPE_GENERICTRAINER, 0, MtEmberWest_Trainer_2, -1
 	person_event SPRITE_GRAMPS, 38, 15, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 2, -1, -1, PAL_OW_RED, PERSONTYPE_TEXTFP, 0, MtEmberWest_NPC_1, -1
@@ -32,6 +33,8 @@ MtEmberWest_MapEventHeader:: db 0, 0
 	person_event SPRITE_TEACHER, 74, 6, SPRITEMOVEDATA_WANDER, 3, 2, -1, -1, PAL_OW_RED, PERSONTYPE_TEXTFP, 0, MtEmberWest_NPC_3, -1
 	person_event SPRITE_R_JUGGLER, 36, 14, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, MtEmberWest_Script_Juggler, -1
 	person_event SPRITE_POKE_BALL, 49, 4, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, PAL_OW_RED, PERSONTYPE_ITEMBALL, 2, HYPER_POTION, EVENT_MT_EMBER_WEST_ITEM_1
+	person_event SPRITE_ROCK, 75, 5, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, PAL_OW_BROWN, PERSONTYPE_JUMPSTD, 0, smashrock, -1
+	person_event SPRITE_ROCK, 75, 17, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, PAL_OW_BROWN, PERSONTYPE_JUMPSTD, 0, smashrock, -1
 
 ; ***** Map callbacks *****
 
@@ -333,8 +336,14 @@ MtEmberWest_NPC_3:
 	done
 
 ; ***** BG events *****
+
 MtEmberWestDirectionsSign:
 	ctxt "<DOWN><RIGHT> Kindle Road"
 	next "<DOWN><DOWN> One Island"
 	done
 	
+MtEmberWestBeachSign:
+	ctxt "Beware the"
+	line "landslides!"
+	done
+
