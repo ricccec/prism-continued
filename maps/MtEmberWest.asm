@@ -181,7 +181,8 @@ MtEmberWest_Trainer_1:
 
 .battle_won_text
 	ctxt "I should have"
-	line "stayed at the beach"
+	line "stayed  at the"
+	cont "beach<...>"
 	done
 
 MtEmberWest_Trainer_2:
