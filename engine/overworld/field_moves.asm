@@ -1216,10 +1216,19 @@ AskRockSmashScript:
 	closetextend
 
 CanUseRockSmash::
+
+	; Check badge
 	CheckEngine ENGINE_MUSCLEBADGE
 	jr z, .no
+
+	; Check HM in bag
+	ld c, ROCK_SMASH_TMNUM
+	call _CheckTMHMItem
+	jr c, .no
+	
+	; Check party can learn the HM
 	ld d, ROCK_SMASH
-	call CheckPartyMove
+	call CheckPartyCanLearnTMHMMove
 	jr nc, .yes
 
 .no
